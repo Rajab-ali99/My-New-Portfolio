@@ -1,0 +1,6 @@
+export const WEBSITE_HOME = '/'
+export const WEBSITE_ABOUT = '/about'
+export const WEBSITE_SERVICES = '/services'
+export const WEBSITE_PROJECTS = '/projects'
+export const WEBSITE_REVIEWS = '/reviews'
+export const WEBSITE_CONTACT = '/contact'
