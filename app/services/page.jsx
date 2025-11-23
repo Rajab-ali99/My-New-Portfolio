@@ -7,6 +7,7 @@ import { GiSatelliteCommunication } from "react-icons/gi";
 import { MdSupportAgent } from "react-icons/md";
 import { SiRelianceindustrieslimited } from "react-icons/si";
 import ContactSection from '@/components/ContactForm'
+import Faqs from '@/components/FAQS'
 
 
 const ServicesPage = () => {
@@ -17,9 +18,9 @@ const ServicesPage = () => {
             </h1>
             <Service />
             <div className="flex justify-center md:py-20 py-10 items-center flex-col ">
-                <span className="text-emerald-500 text-md font-black px-3 mb-3 py-0.5 rounded-full bg-gray-800">WHY CHOOSE US</span>
+                <span className="text-emerald-500 text-md font-black px-3 mb-3 py-0.5 rounded-full bg-gray-800">Why Choose Bullish Pixel?</span>
                 <h2 className="text-4xl md:text-5xl font-black text-center text-white ">
-                    Why We are your best <br /> choice
+                    Why We Would Be Your The Best <br /> choice?
                 </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 ">
@@ -67,7 +68,11 @@ const ServicesPage = () => {
                     <p className="text-xl text-center text-gray-400">Our team has extensive experience working across various industries.</p>
                 </div>
             </div>
-            <ContactSection/>
+            <div className="md:py-20 py-10">
+
+                <Faqs />
+            </div>
+            <ContactSection />
         </div>
     )
 }

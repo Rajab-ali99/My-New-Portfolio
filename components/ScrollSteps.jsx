@@ -5,23 +5,23 @@ import { useRef } from "react";
 const steps = [
   {
     step: "01",
-    title: "Discovery Phase",
-    desc: "During this initial stage, we delve deep into understanding your business goals, target audience, and market landscape. We conduct thorough research and analysis to identify opportunities and challenges, laying the foundation for a successful campaign.",
+    title: "Discovery & Insight",
+    desc: "We start by deeply understanding your trading psychology (with DYOR), business vision, target audience, and competitive landscape. Through meticulous research and analysis, we identify unique opportunities and challenges — laying a strong, insight-driven foundation tailored to your goals.",
   },
   {
     step: "02",
-    title: "Strategy Development",
-    desc: "With insights gathered from the discovery phase, we develop a customized strategy tailored to your specific needs and objectives. This plan outlines key tactics, channels, and timelines to achieve your goals effectively.",
+    title: "Customized Strategy",
+    desc: "Guided by these insights, we design a bespoke strategy that aligns perfectly with your objectives. Every tactic, channel, and timeline is strategically chosen to create maximum impact and measurable growth.",
   },
   {
     step: "03",
-    title: "Implementation and Execution",
-    desc: "Once the strategy is approved, we roll up our sleeves and put the plan into action. Our expert team executes with precision — from SEO optimization to captivating design and social media content.",
+    title: "Precision Execution",
+    desc: "Our expert team turns strategy into action with creativity and accuracy. From advanced strategies and compelling content to dynamic design and targeted campaigns, we execute each step with the highest standards of quality and innovation.",
   },
   {
     step: "04",
-    title: "Monitoring and Optimization",
-    desc: "Continuous monitoring and optimization are essential to ensuring the success and effectiveness of our campaigns. We closely track key performance indicators (KPIs) and metrics, analyzing data to identify areas for improvement and making necessary adjustments to optimize results. This iterative process allows us to adapt to changes in the market and maximize the return on your investment.",
+    title: "Continuous Optimization & Growth",
+    desc: "True success is an evolving journey. We continuously monitor key metrics, analyze performance data, and fine-tune campaigns — ensuring agility, adaptability, and sustained growth. Your success is our ongoing commitment.",
   },
 ];
 

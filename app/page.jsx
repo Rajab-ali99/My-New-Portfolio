@@ -1,22 +1,23 @@
 
-import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import HeroImg from '@/public/assets/hero.webp'
+import HeroImg from '@/public/assets/home/hero.webp'
 import icon from '@/public/assets/icon.jpeg'
 import { IoStarSharp } from "react-icons/io5";
 import Button from "@/components/Button";
-import group from '@/public/assets/grp.jpg'
+import group from '@/public/assets/home/grp.jpg'
 import { BsFillRocketFill } from "react-icons/bs";
 import { DiRaphael } from "react-icons/di";
 import { SiHiveBlockchain } from "react-icons/si";
 import { PiUserFocus } from "react-icons/pi";
-import dev from '@/public/assets/dev.webp'
-import devM from '@/public/assets/devM.jpg'
+import dev from '@/public/assets/home/dev.webp'
+import devM from '@/public/assets/home/devM.jpg'
 import Faqs from "@/components/FAQS";
 import ContactSection from "@/components/ContactForm";
 import Service from "@/components/Service";
 import HerroSection from "@/components/HerroSection";
+import Link from "next/link";
+import { WEBSITE_SERVICES } from "@/routes/WebsiteRoutes";
 export default function Home() {
   return (
     <div >
@@ -43,7 +44,7 @@ export default function Home() {
       </div>
 
       <div className=" hidden md:block relative left-[170px] -mt-[110px] bg-transparent z-50  rounded-4xl w-sm py-4 px-5 border border-slate-600">
-        <div className="text-4xl pb-2   border-gray-500"><span className="font-black text-5xl text-emerald-400">#1</span> Marketing Agency in Pakistan</div>
+        <div className="text-4xl pb-2   border-gray-500"><span className="font-black text-5xl text-emerald-400">#1</span> Services Hub In Tech Era</div>
         <div className="w-full h-[0.5px] bg-gray-700"></div>
         <div className="pt-3 flex items-center gap-5">
           <div className="h-[40px] w-[40px] rounded-full">
@@ -58,7 +59,7 @@ export default function Home() {
               <IoStarSharp className="text-emerald-400" />
 
             </div>
-            <div className="text-xl">200+ 5 star Reviews</div>
+            <div className="text-xl">99+    5 star Reviews</div>
           </div>
         </div>
       </div>
@@ -70,22 +71,28 @@ export default function Home() {
           <h2 className="font-black text-3xl md:text-6xl">What we are offering</h2>
         </div>
         <div className="pt-5 flex justify-center md:justify-end">
-          <Button text='VIEW ALL SERVICES' type='button' />
+          <Link href={WEBSITE_SERVICES} >
+            <Button text='VIEW ALL SERVICES' type='button' />
+          </Link>
         </div>
         <div className="md:py-25 py-8">
-        <Service/>
+          <Service />
         </div>
       </section>
 
       {/* Our Expertise Section */}
       <section>
         <div className="flex px-10 pb-3 md:pb-8 flex-col md:flex-row items-center gap-3">
-          <span className="text-emerald-500 text-xl font-black px-3 py-0.5 rounded-full bg-gray-800">Why us</span>
-          <h2 className="font-black text-4xl md:text-5xl">Our Specialities</h2>
+          <span className="text-emerald-500 md:text-xl font-black px-3 py-0.5 rounded-full bg-gray-800">Why us?</span>
+          <div className="mb-5 md:mb-0">
+
+            <h2 className="font-black text-2xl md:text-5xl">Your Growth, Our Strategy</h2>
+            <p className="text-center md:text-2xl font-black text-gray-500">A Partnership Built on Results</p>
+          </div>
         </div>
-        <div className="text-slate-600 font-semibold text-md md:text-xl flex md:justify-end pb-6">
-          <div className="md:w-sm text-center w-[250px] mx-auto md:mx-10">
-            Our top-notch digital marketing agency not only delivers impressive results but also dazzles our clients with remarkable statistics. We pride ourselves on our ability to amaze customers with tangible outcomes and eye-catching figures.
+        <div className="text-slate-600 font-semibold text-md md:text-2xl flex md:justify-end pb-6">
+          <div className="md:w-xl text-center md:text-left w-[250px] mx-auto md:mx-10">
+            Our top-notch <span className="text-emerald-500">Services <span className="text-red-500">Hub</span></span> not only delivers impressive results but also dazzles our clients with remarkable statistics. We pride ourselves on our ability to amaze customers with tangible outcomes and eye-catching figures.
 
           </div>
         </div>
@@ -97,49 +104,49 @@ export default function Home() {
 
 
             <div className="bg-slate-50/25 h-[110px] md:h-[180px] gap-2 flex flex-col items-center justify-center w-[110px] md:w-[180px] rounded-full  ">
-              <div className="md:text-5xl text-3xl font-black ">15+</div>
+              <div className="md:text-5xl text-3xl font-black ">7+</div>
               <div className="font-bold text-gray-100 text-xs md:text-xl">Years of Experience</div>
             </div>
 
             <div className="bg-slate-50/25 relative right-5 bottom-5 h-[110px] w-[110px] md:h-[180px] gap-2 flex flex-col items-center justify-center md:w-[180px] rounded-full  ">
-              <div className="md:text-5xl text-3xl font-black ">200+</div>
-              <div className="font-bold text-gray-100 text-xs md:text-xl">Successfull Projects</div>
+              <div className="md:text-5xl text-3xl font-black ">110+</div>
+              <div className="font-bold text-gray-100 text-xs md:text-xl">Successful Projects</div>
             </div>
 
             <div className="bg-slate-50/25 relative right-10  h-[110px] w-[110px] md:h-[180px] gap-2 flex flex-col items-center justify-center md:w-[180px] rounded-full  ">
-              <div className="md:text-5xl text-3xl font-black ">150+</div>
+              <div className="md:text-5xl text-3xl font-black ">101+</div>
               <div className="font-bold text-gray-100 text-xs md:text-xl">Happy Clients</div>
             </div>
 
             <div className="bg-slate-50/25 relative right-15 bottom-5 h-[110px] w-[110px] md:h-[180px] gap-2 flex flex-col items-center justify-center md:w-[180px] rounded-full  ">
-              <div className="md:text-5xl text-3xl font-black ">200+</div>
+              <div className="md:text-5xl text-3xl font-black ">99+</div>
               <div className="font-bold text-gray-100 text-xs md:text-xl">5 Star Reviews</div>
             </div>
 
 
           </div>
           <div className="absolute z-20 bottom-0 w-full ">
-            <div className="flex flex-col md:flex-row gap-3 px-8  items-center">
-              <div className="p-5 flex  rounded-xl flex-col gap-1 items-center bg-[#1f1d1d]/40 justify-center ">
+            <div className="grid md:grid-cols-3 gap-3 px-8  items-center">
+              <div className="p-5 flex  rounded-xl flex-col gap-1 items-center bg-[#1f1d1d]/60    justify-center ">
                 <div className="p-2 rounded-md mb-4 bg-gray-900/40 border-emerald-500 border">
                   < BsFillRocketFill className="text-emerald-500 text-4xl" />
                 </div>
-                <h3 className="text-3xl font-black">Proven Track Record</h3>
-                <p className="text-lg">We have built a reputation as a trusted and reliable partner in achieving business success.</p>
+                <h3 className="md:text-3xl text-2xl font-black">Proven Performance</h3>
+                <p className="md:text-base text-gray-300 text-sm">We deliver measurable results. Our data-driven approach is built to meet and exceed your key performance indicators.</p>
               </div>
-              <div className="p-5 flex rounded-xl flex-col gap-1 items-center bg-[#1f1d1d]/40 justify-center ">
+              <div className="p-5 flex rounded-xl flex-col gap-1 items-center bg-[#1f1d1d]/60 justify-center ">
                 <div className="p-2 rounded-md mb-4 bg-gray-900/40 border-emerald-500 border">
                   < SiHiveBlockchain className="text-emerald-500 text-4xl" />
                 </div>
-                <h3 className="text-3xl font-black">Tailored Solutions</h3>
-                <p className="text-lg">We offer personalized solutions tailored to your specific goals, audience, and industry.</p>
+                <h3 className="md:text-3xl text-xl font-black">Strategies Sculpted for You</h3>
+                <p className="md:text-base text-gray-300 text-sm">We build custom strategies from the ground up, tailored to your specific goals and market challenges.</p>
               </div>
-              <div className="p-5 flex rounded-xl flex-col gap-1 items-center bg-[#1f1d1d]/40 justify-center ">
+              <div className="p-5 flex rounded-xl flex-col gap-1 items-center bg-[#1f1d1d]/60 justify-center ">
                 <div className="p-2 rounded-md mb-4 bg-gray-900/40 border-emerald-500 border">
                   < PiUserFocus className="text-emerald-500 text-4xl" />
                 </div>
-                <h3 className="text-3xl font-black">Client-Centric Focus</h3>
-                <p className="text-lg">Your success is our priority. We prioritize understanding your business goals.</p>
+                <h3 className="md:text-3xl text-xl font-black">Your Success is Our Success</h3>
+                <p className="md:text-base text-gray-300 text-sm">We act as a true extension of your team, fully invested in achieving your long-term vision.</p>
               </div>
             </div>
             <div className="flex flex-col my-8 md:my-0 md:flex-row justify-center items-center gap-3">
@@ -175,28 +182,26 @@ export default function Home() {
             <Image className="rounded-3xl hidden md:block opacity-30" src={dev.src} height={dev.height} width={dev.width} alt="developer img" />
             <Image className="rounded-3xl  md:hidden opacity-50" src={devM.src} height={devM.height} width={devM.width} alt="developer img" />
             <div className="absolute bottom-0 p-10 left-0">
-              <h2 className="font-black md:ps-20 text-emerald-500 text-9xl">150%</h2>
-              <p className="text-2xl md:text-4xl text-emerald-400 font-black md:font-bold">Average Traffic Increase</p>
-              <p className="md:text-slate-500 text-lg md:text-2xl mt-40 md:mt-10">Clients choose to stay with us over the long run due to the exceptional results we deliver and the strong relationships we build.
+              <h2 className="font-black md:ps-20 text-emerald-500 text-9xl">110%</h2>
+              <p className="text-2xl md:text-4xl text-emerald-400 font-black md:font-bold">Your Business Growth is definite with Bullish <span className="text-red-500">Pixel</span></p>
+              <p className="md:text-slate-500 text-lg md:text-2xl mt-40 md:mt-10">Your businesses & your thoughts must have to grow with Bullish Pixel Strategies.
 
               </p>
             </div>
           </div>
           <div className=" md:w-[30vw] min-h-[48vh] md:min-h-[75vh] p-5 md:p-10 flex flex-col  justify-between rounded-3xl bg-[#1f1d1d]">
             <div>
-              <h2 className="text-emerald-500 text-9xl font-black">$54<span className="text-7xl">M+</span></h2>
+              <h2 className="text-emerald-500 text-9xl font-black">54<span className="text-7xl">M+</span></h2>
               <p className="font-bold text-3xl mt-3 text-center md:text-start  md:text-4xl">Revenue Generated</p>
             </div>
             <div>
-              <p className="text-slate-500 text-sm md:text-lg">Our digital marketing strategies have generated over $54+ million in revenue for our clients, showcasing our ability to drive substantial business growth through effective online campaigns.</p>
+              <p className="text-slate-500 text-sm md:text-lg">Our services hub strategies have generated over 54M+ in revenue for our clients, demonstrating our proven ability to drive substantial business growth.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQS */}
-
-      <Faqs />
+      
 
       {/* Contact section */}
 

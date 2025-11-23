@@ -6,11 +6,13 @@ import {
     Phone,
     MapPin,
     Facebook,
-    Twitter,
+    
     Linkedin,
     Instagram,
     Clock,
 } from "lucide-react";
+import { BsTwitterX } from "react-icons/bs";
+
 
 export default function ContactPage() {
     return (
@@ -26,7 +28,7 @@ export default function ContactPage() {
                             <Phone className="text-emerald-500 w-6 h-6" />
                             <h3 className="text-lg font-semibold">Hotline:</h3>
                         </div>
-                        <p className="text-xl font-semibold text-white/90">(555) 123-4567</p>
+                        <p className="text-xl font-semibold text-white/90">+92 311 7787 395</p>
                     </div>
 
                     {/* Address */}
@@ -36,7 +38,7 @@ export default function ContactPage() {
                             <h3 className="text-lg font-semibold">Address:</h3>
                         </div>
                         <p className="text-lg font-medium text-white/90">
-                            123 Main Street, Cityville, Stateburg, 98765
+                            Lahore, Pakistan
                         </p>
                     </div>
 
@@ -46,8 +48,8 @@ export default function ContactPage() {
                             <Mail className="text-emerald-500 w-6 h-6" />
                             <h3 className="text-lg font-semibold">Email:</h3>
                         </div>
-                        <p className="text-lg font-medium text-white/90 uppercase">
-                            agencee@email.com
+                        <p className="text-lg font-medium text-white/90 ">
+                           hello@bullishpixel.com
                         </p>
                     </div>
 
@@ -59,25 +61,25 @@ export default function ContactPage() {
                         </div>
                         <div className="flex items-center gap-4">
                             <a
-                                href="#"
+                              target="_blank"  href="http://facebook.com/BullishPixel"
                                 className="p-3 rounded-full border border-white/10 hover:bg-emerald-500 transition"
                             >
                                 <Facebook className="w-5 h-5" />
                             </a>
                             <a
-                                href="#"
+                               target="_blank" href="http://x.com/BullishPixel"
                                 className="p-3 rounded-full border border-white/10 hover:bg-emerald-500 transition"
                             >
-                                <Twitter className="w-5 h-5" />
+                                <BsTwitterX className="w-5 h-5" />
                             </a>
                             <a
-                                href="#"
+                               target="_blank" href="http://linkedin.com/in/bullishpixel"
                                 className="p-3 rounded-full border border-white/10 hover:bg-emerald-500 transition"
                             >
                                 <Linkedin className="w-5 h-5" />
                             </a>
                             <a
-                                href="#"
+                               target="_blank" href="http://instagram.com/bullishpixel"
                                 className="p-3 rounded-full border border-white/10 hover:bg-emerald-500 transition"
                             >
                                 <Instagram className="w-5 h-5" />
@@ -92,8 +94,8 @@ export default function ContactPage() {
                             <h3 className="text-lg font-semibold">Opening Hours:</h3>
                         </div>
                         <div className="text-white/90 space-y-1 text-lg font-medium">
-                            <p>Mon to Fri: 9.00AM - 8.30PM</p>
-                            <p>Sat: 10.00AM - 6.30PM</p>
+                            <p>Mon to Fri: 11.00AM - 9.00PM</p>
+                            <p>Sat: 12.00pM - 6.30PM</p>
                             <p>Sun: Closed</p>
                         </div>
                     </div>

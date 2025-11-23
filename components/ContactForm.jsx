@@ -63,7 +63,7 @@ export default function ContactSection() {
                                                 <FormLabel className="text-gray-300 text-lg font-bold">Name</FormLabel>
                                                 <FormControl>
                                                     <Input
-                                                        placeholder="Jane Smith"
+                                                        placeholder="Your name..."
                                                         className="bg-[#1b1b1b]  h-14 text-xl! font-medium! placeholder:text-lg border-white/10 rounded-3xl focus:shadow-md focus:shadow-emerald-500 text-white placeholder-gray-400"
                                                         {...field}
                                                     />
@@ -82,7 +82,7 @@ export default function ContactSection() {
                                                 <FormLabel className="text-gray-300 text-lg font-bold">Email</FormLabel>
                                                 <FormControl>
                                                     <Input
-                                                        placeholder="jane@agency.com"
+                                                        placeholder="Your email..."
                                                         type="email"
                                                         className="bg-[#1b1b1b]  h-14 text-xl! font-medium! placeholder:text-lg border-white/10 rounded-3xl focus:shadow-md focus:shadow-emerald-500 text-white placeholder-gray-400"
                                                         {...field}

@@ -1,7 +1,10 @@
 import { Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
+import whtsp from '@/public/assets/whtsp.png'
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Image from "next/image";
+import Link from "next/link";
 
 const CormorantFont=Cormorant_Garamond({
   weight:['400','500','600','700',],
@@ -22,6 +25,9 @@ export default function RootLayout({ children }) {
       >
        <Navbar/>
         {children}
+        <Link href='https://wa.me/923117787395'>
+        <Image className=" w-10 fixed z-40 bottom-4 md:bottom-10 right-4" src={whtsp.src} height={whtsp.height} width={whtsp.width} alt="Whatsap logo"/>
+        </Link>
         <Footer/>
       </body>
     </html>

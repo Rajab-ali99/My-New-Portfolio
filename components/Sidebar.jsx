@@ -40,7 +40,7 @@ const Sidebar = ({ open, onClose }) => {
 
         {/* Quote Button */}
         <div className="px-4 mt-6">
-          <Link onClick={onClose} href='#' className="w-full border border-white rounded-full px-4 py-2 hover:bg-white hover:text-black transition">
+          <Link onClick={onClose} href={WEBSITE_CONTACT} className="w-full border border-white rounded-full px-4 py-2 hover:bg-white hover:text-black transition">
             Get A Quote
           </Link>
         </div>
