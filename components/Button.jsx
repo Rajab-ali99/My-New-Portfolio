@@ -7,9 +7,9 @@ import { motion, useAnimationFrame, useMotionValue, useSpring, useTransform } fr
 const Button = ({text , onClick , type}) => {
   return (
     <motion.button whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }} onClick={onClick} type={type} className="bg-emerald-500 cursor-pointer relative z-40 hover:bg-emerald-600 text-white px-6 py-3 rounded-full font-bold  transition">
+        whileTap={{ scale: 0.95 }} onClick={onClick} type={type} className="bg-lime-600 cursor-pointer relative z-40 hover:bg-lime-700 text-white px-6 py-3 rounded-full flex items-center gap-2 font-medium  transition">
     {text}
-    <FiArrowUpRight className='inline-block ml-2'/>
+    <FiArrowUpRight className=''/>
     </motion.button>
   )
 }

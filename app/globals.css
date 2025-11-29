@@ -64,7 +64,7 @@ body {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-92%);
+    transform: translateX(-89%);
   }
 }
 .animate-marquee {
@@ -75,7 +75,7 @@ body {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-89%);
   }
 }
 .animate-marqueee {

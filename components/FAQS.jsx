@@ -215,31 +215,30 @@ export default function Faqs() {
     return (
         <div className="bg-[#0b0b0b] px-6 md:px-10">
             <div className="flex justify-center items-center flex-col ">
-                <span className="text-emerald-500 text-sm font-black px-3 mb-3 py-0.5 rounded-full bg-gray-800">FREQUENTLY ASKED QUESTIONS</span>                   
+                <span className="text-lime-600 text-sm font-semibold px-3 mb-3 py-1 rounded-full bg-[#212121]">Frequently Asked Questions</span>                   
                  
-                <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-12">
+                <h2 className="text-3xl md:text-5xl font-semibold text-center text-white mb-12">
                     We've Got Answers!
                 </h2>
             </div>
-            <div className="max-w-4xl mx-auto">
-                 <h2 className="text-center text-2xl text-red-500 font-bold my-2">About Marketing</h2>
+            <div className="md:max-w-4xl mx-auto">
                 {Marketingfaqs.map((faq, index) => (
                     <div
                         key={index}
-                        className="mb-4 bg-[#121212] border border-white/10 rounded-4xl p-5 transition-all duration-300"
+                        className="mb-4 bg-[#121212] border border-white/10 rounded-3xl md:rounded-4xl p-4 md:p-5 transition-all duration-300"
                     >
                         {/* Header */}
                         <button
-                            className="w-full flex justify-between cursor-pointer  items-center text-left"
+                            className="w-full flex justify-between gap-2 cursor-pointer  items-center text-left"
                             onClick={() => toggleFAQ(index)}
                         >
-                            <span className="text-white font-bold text-sm  md:text-xl">
+                            <span className="text-white font-semibold text-xs   md:text-lg">
                                 {faq.question}
                             </span>
                             <motion.div
                                 animate={{ rotate: activeIndex === index ? 180 : 0 }}
                                 transition={{ duration: 0.3 }}
-                                className="p-2 bg-emerald-500 rounded-full text-black"
+                                className="p-2 bg-lime-700 rounded-full text-black"
                             >
                                 <ChevronDown size={20} />
                             </motion.div>
@@ -255,7 +254,7 @@ export default function Faqs() {
                                     transition={{ duration: 0.2, ease: "easeInOut" }}
                                     className="overflow-hidden mt-3"
                                 >
-                                    <p className="text-gray-300 font-semibold text-xs md:text-lg leading-relaxed">
+                                    <p className="text-gray-500 font-semibold text-xs md:text-base leading-relaxed">
                                         {faq.answer}
                                     </p>
                                 </motion.div>
@@ -264,264 +263,7 @@ export default function Faqs() {
                     </div>
                 ))}
             </div>
-            <div className="max-w-4xl mx-auto">
-                 <h2 className="text-center text-2xl font-bold mt-10 text-red-500 my-2">About Trading</h2>
-                {Tradingfaqs.map((faq, index) => (
-                    <div
-                        key={index}
-                        className="mb-4 bg-[#121212] border border-white/10 rounded-4xl p-5 transition-all duration-300"
-                    >
-                        {/* Header */}
-                        <button
-                            className="w-full flex justify-between cursor-pointer  items-center text-left"
-                            onClick={() => toggleFAQ(index)}
-                        >
-                            <span className="text-white font-bold text-sm  md:text-xl">
-                                {faq.question}
-                            </span>
-                            <motion.div
-                                animate={{ rotate: activeIndex === index ? 180 : 0 }}
-                                transition={{ duration: 0.3 }}
-                                className="p-2 bg-emerald-500 rounded-full text-black"
-                            >
-                                <ChevronDown size={20} />
-                            </motion.div>
-                        </button>
-
-                        {/* Answer */}
-                        <AnimatePresence>
-                            {activeIndex === index && (
-                                <motion.div
-                                    initial={{ height: 0, opacity: 0 }}
-                                    animate={{ height: "auto", opacity: 1 }}
-                                    exit={{ height: 0, opacity: 0 }}
-                                    transition={{ duration: 0.2, ease: "easeInOut" }}
-                                    className="overflow-hidden mt-3"
-                                >
-                                    <p className="text-gray-300 font-semibold text-xs md:text-lg leading-relaxed">
-                                        {faq.answer}
-                                    </p>
-                                </motion.div>
-                            )}
-                        </AnimatePresence>
-                    </div>
-                ))}
-            </div>
-            <div className="max-w-4xl mx-auto">
-                 <h2 className="text-center text-2xl font-bold mt-10 text-red-500 my-2">About Shopify Store</h2>
-                {Shopifyfaqs.map((faq, index) => (
-                    <div
-                        key={index}
-                        className="mb-4 bg-[#121212] border border-white/10 rounded-4xl p-5 transition-all duration-300"
-                    >
-                        {/* Header */}
-                        <button
-                            className="w-full flex justify-between cursor-pointer  items-center text-left"
-                            onClick={() => toggleFAQ(index)}
-                        >
-                            <span className="text-white font-bold text-sm  md:text-xl">
-                                {faq.question}
-                            </span>
-                            <motion.div
-                                animate={{ rotate: activeIndex === index ? 180 : 0 }}
-                                transition={{ duration: 0.3 }}
-                                className="p-2 bg-emerald-500 rounded-full text-black"
-                            >
-                                <ChevronDown size={20} />
-                            </motion.div>
-                        </button>
-
-                        {/* Answer */}
-                        <AnimatePresence>
-                            {activeIndex === index && (
-                                <motion.div
-                                    initial={{ height: 0, opacity: 0 }}
-                                    animate={{ height: "auto", opacity: 1 }}
-                                    exit={{ height: 0, opacity: 0 }}
-                                    transition={{ duration: 0.2, ease: "easeInOut" }}
-                                    className="overflow-hidden mt-3"
-                                >
-                                    <p className="text-gray-300 font-semibold text-xs md:text-lg leading-relaxed">
-                                        {faq.answer}
-                                    </p>
-                                </motion.div>
-                            )}
-                        </AnimatePresence>
-                    </div>
-                ))}
-            </div>
-            <div className="max-w-4xl mx-auto">
-                 <h2 className="text-center text-2xl font-bold mt-10 text-red-500 my-2">About Custom Web Development</h2>
-                {Webfaqs.map((faq, index) => (
-                    <div
-                        key={index}
-                        className="mb-4 bg-[#121212] border border-white/10 rounded-4xl p-5 transition-all duration-300"
-                    >
-                        {/* Header */}
-                        <button
-                            className="w-full flex justify-between cursor-pointer  items-center text-left"
-                            onClick={() => toggleFAQ(index)}
-                        >
-                            <span className="text-white font-bold text-sm  md:text-xl">
-                                {faq.question}
-                            </span>
-                            <motion.div
-                                animate={{ rotate: activeIndex === index ? 180 : 0 }}
-                                transition={{ duration: 0.3 }}
-                                className="p-2 bg-emerald-500 rounded-full text-black"
-                            >
-                                <ChevronDown size={20} />
-                            </motion.div>
-                        </button>
-
-                        {/* Answer */}
-                        <AnimatePresence>
-                            {activeIndex === index && (
-                                <motion.div
-                                    initial={{ height: 0, opacity: 0 }}
-                                    animate={{ height: "auto", opacity: 1 }}
-                                    exit={{ height: 0, opacity: 0 }}
-                                    transition={{ duration: 0.2, ease: "easeInOut" }}
-                                    className="overflow-hidden mt-3"
-                                >
-                                    <p className="text-gray-300 font-semibold text-xs md:text-lg leading-relaxed">
-                                        {faq.answer}
-                                    </p>
-                                </motion.div>
-                            )}
-                        </AnimatePresence>
-                    </div>
-                ))}
-            </div>
-            <div className="max-w-4xl mx-auto">
-                 <h2 className="text-center text-2xl font-bold mt-10 text-red-500 my-2">About Wordpress Development</h2>
-                {Wordpressfaqs.map((faq, index) => (
-                    <div
-                        key={index}
-                        className="mb-4 bg-[#121212] border border-white/10 rounded-4xl p-5 transition-all duration-300"
-                    >
-                        {/* Header */}
-                        <button
-                            className="w-full flex justify-between cursor-pointer  items-center text-left"
-                            onClick={() => toggleFAQ(index)}
-                        >
-                            <span className="text-white font-bold text-sm  md:text-xl">
-                                {faq.question}
-                            </span>
-                            <motion.div
-                                animate={{ rotate: activeIndex === index ? 180 : 0 }}
-                                transition={{ duration: 0.3 }}
-                                className="p-2 bg-emerald-500 rounded-full text-black"
-                            >
-                                <ChevronDown size={20} />
-                            </motion.div>
-                        </button>
-
-                        {/* Answer */}
-                        <AnimatePresence>
-                            {activeIndex === index && (
-                                <motion.div
-                                    initial={{ height: 0, opacity: 0 }}
-                                    animate={{ height: "auto", opacity: 1 }}
-                                    exit={{ height: 0, opacity: 0 }}
-                                    transition={{ duration: 0.2, ease: "easeInOut" }}
-                                    className="overflow-hidden mt-3"
-                                >
-                                    <p className="text-gray-300 font-semibold text-xs md:text-lg leading-relaxed">
-                                        {faq.answer}
-                                    </p>
-                                </motion.div>
-                            )}
-                        </AnimatePresence>
-                    </div>
-                ))}
-            </div>
-            <div className="max-w-4xl mx-auto">
-                 <h2 className="text-center text-2xl font-bold mt-10 text-red-500 my-2">About LLC Ltd & Pvt</h2>
-                {LLCfaqs.map((faq, index) => (
-                    <div
-                        key={index}
-                        className="mb-4 bg-[#121212] border border-white/10 rounded-4xl p-5 transition-all duration-300"
-                    >
-                        {/* Header */}
-                        <button
-                            className="w-full flex justify-between cursor-pointer  items-center text-left"
-                            onClick={() => toggleFAQ(index)}
-                        >
-                            <span className="text-white font-bold text-sm  md:text-xl">
-                                {faq.question}
-                            </span>
-                            <motion.div
-                                animate={{ rotate: activeIndex === index ? 180 : 0 }}
-                                transition={{ duration: 0.3 }}
-                                className="p-2 bg-emerald-500 rounded-full text-black"
-                            >
-                                <ChevronDown size={20} />
-                            </motion.div>
-                        </button>
-
-                        {/* Answer */}
-                        <AnimatePresence>
-                            {activeIndex === index && (
-                                <motion.div
-                                    initial={{ height: 0, opacity: 0 }}
-                                    animate={{ height: "auto", opacity: 1 }}
-                                    exit={{ height: 0, opacity: 0 }}
-                                    transition={{ duration: 0.2, ease: "easeInOut" }}
-                                    className="overflow-hidden mt-3"
-                                >
-                                    <p className="text-gray-300 font-semibold text-xs md:text-lg leading-relaxed">
-                                        {faq.answer}
-                                    </p>
-                                </motion.div>
-                            )}
-                        </AnimatePresence>
-                    </div>
-                ))}
-            </div>
-            <div className="max-w-4xl mx-auto">
-                 <h2 className="text-center text-2xl font-bold mt-10 text-red-500 my-2">About Coaching/Tutoring Services</h2>
-                {LLCfaqs.map((faq, index) => (
-                    <div
-                        key={index}
-                        className="mb-4 bg-[#121212] border border-white/10 rounded-4xl p-5 transition-all duration-300"
-                    >
-                        {/* Header */}
-                        <button
-                            className="w-full flex justify-between cursor-pointer  items-center text-left"
-                            onClick={() => toggleFAQ(index)}
-                        >
-                            <span className="text-white font-bold text-sm  md:text-xl">
-                                {faq.question}
-                            </span>
-                            <motion.div
-                                animate={{ rotate: activeIndex === index ? 180 : 0 }}
-                                transition={{ duration: 0.3 }}
-                                className="p-2 bg-emerald-500 rounded-full text-black"
-                            >
-                                <ChevronDown size={20} />
-                            </motion.div>
-                        </button>
-
-                        {/* Answer */}
-                        <AnimatePresence>
-                            {activeIndex === index && (
-                                <motion.div
-                                    initial={{ height: 0, opacity: 0 }}
-                                    animate={{ height: "auto", opacity: 1 }}
-                                    exit={{ height: 0, opacity: 0 }}
-                                    transition={{ duration: 0.2, ease: "easeInOut" }}
-                                    className="overflow-hidden mt-3"
-                                >
-                                    <p className="text-gray-300 font-semibold text-xs md:text-lg leading-relaxed">
-                                        {faq.answer}
-                                    </p>
-                                </motion.div>
-                            )}
-                        </AnimatePresence>
-                    </div>
-                ))}
-            </div>
+            
         </div>
     );
 }

@@ -39,8 +39,8 @@ export default function ContactSection() {
                 {/* Left Side - Heading */}
                 <div className="flex-1 flex flex-col mb-10 md:mb-0 relative md:bottom-12 items-center text-center md:text-left">
 
-                    <h2 className="text-white text-[10rem] md:text-[180px] font-extrabold leading-tight ">Let's</h2>
-                    <h2 className="text-emerald-500 text-[9rem] absolute top-24 md:top-28 md:text-[180px] font-extrabold leading-tight">Talk!</h2>
+                    <h2 className="text-white text-[8rem] md:text-[180px] font-extrabold leading-tight ">Let's</h2>
+                    <h2 className="text-lime-600 text-[7rem] absolute top-24 md:top-28 md:text-[180px] font-extrabold leading-tight">Talk!</h2>
 
                 </div>
 
@@ -60,11 +60,11 @@ export default function ContactSection() {
                                         name="name"
                                         render={({ field }) => (
                                             <FormItem>
-                                                <FormLabel className="text-gray-300 text-lg font-bold">Name</FormLabel>
+                                                <FormLabel className="text-gray-300 text-lg font-semibold">Name</FormLabel>
                                                 <FormControl>
                                                     <Input
                                                         placeholder="Your name..."
-                                                        className="bg-[#1b1b1b]  h-14 text-xl! font-medium! placeholder:text-lg border-white/10 rounded-3xl focus:shadow-md focus:shadow-emerald-500 text-white placeholder-gray-400"
+                                                        className="bg-[#1b1b1b]  h-14  placeholder:text-lg border-white/10 rounded-3xl focus:shadow-md focus:shadow-lime-600 text-white placeholder-gray-400"
                                                         {...field}
                                                     />
                                                 </FormControl>
@@ -79,12 +79,12 @@ export default function ContactSection() {
                                         name="email"
                                         render={({ field }) => (
                                             <FormItem>
-                                                <FormLabel className="text-gray-300 text-lg font-bold">Email</FormLabel>
+                                                <FormLabel className="text-gray-300 text-lg font-semibold">Email</FormLabel>
                                                 <FormControl>
                                                     <Input
                                                         placeholder="Your email..."
                                                         type="email"
-                                                        className="bg-[#1b1b1b]  h-14 text-xl! font-medium! placeholder:text-lg border-white/10 rounded-3xl focus:shadow-md focus:shadow-emerald-500 text-white placeholder-gray-400"
+                                                        className="bg-[#1b1b1b]  h-14 placeholder:text-lg border-white/10 rounded-3xl focus:shadow-md focus:shadow-lime-600 text-white placeholder-gray-400"
                                                         {...field}
                                                     />
                                                 </FormControl>
@@ -99,12 +99,12 @@ export default function ContactSection() {
                                         name="message"
                                         render={({ field }) => (
                                             <FormItem>
-                                                <FormLabel className="text-gray-300 text-lg font-bold">Message</FormLabel>
+                                                <FormLabel className="text-gray-300 text-lg font-semibold">Message</FormLabel>
                                                 <FormControl>
                                                     <Textarea
                                                         rows={8}
                                                         placeholder="Write your message..."
-                                                        className="bg-[#1b1b1b]  h-28 text-xl! font-medium! placeholder:text-lg border-white/10 rounded-3xl focus:shadow-md focus:shadow-emerald-500 text-white placeholder-gray-400"
+                                                        className="bg-[#1b1b1b]  h-28   placeholder:text-lg border-white/10 rounded-3xl focus:shadow-md focus:shadow-lime-600 text-white placeholder-gray-400"
                                                         {...field}
                                                     />
                                                 </FormControl>
@@ -116,7 +116,7 @@ export default function ContactSection() {
                                     {/* Submit Button */}
                                     <Button
                                         type="submit"
-                                        className="w-full bg-emerald-500 hover:bg-emerald-600 cursor-pointer text-black font-semibold text-lg py-6 rounded-xl transition-all"
+                                        className="w-full bg-lime-600 hover:bg-lime-700 cursor-pointer text-black font-semibold text-lg py-6 rounded-xl transition-all"
                                     >
                                         Submit
                                     </Button>

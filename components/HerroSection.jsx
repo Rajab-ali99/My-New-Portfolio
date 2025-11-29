@@ -7,20 +7,21 @@ import { WEBSITE_SERVICES } from "@/routes/WebsiteRoutes";
 import Link from "next/link";
 
 const middleRingImages = [
-    "/assets/Hero/9.png", "/assets/Hero/12.png",
-    "/assets/Hero/13.png", "/assets/Hero/14.png", "/assets/Hero/15.png", "/assets/Hero/16.png",
+     "/assets/Hero/21.png", "/assets/Hero/2.png", "/assets/Hero/3.png", "/assets/Hero/4.png",
+    "/assets/Hero/5.png", "/assets/Hero/6.png",  "/assets/Hero/7.png",
+    "/assets/Hero/8.png", "/assets/Hero/9.png",
+     "/assets/Hero/10.png", "/assets/Hero/11.png", "/assets/Hero/12.png",
+    "/assets/Hero/13.png", "/assets/Hero/14.png", "/assets/Hero/15.png","/assets/Hero/16.png",
     "/assets/Hero/17.png", "/assets/Hero/18.png", "/assets/Hero/19.png", "/assets/Hero/20.png",
-    "/assets/Hero/21.png", "/assets/Hero/3.png", "/assets/Hero/23.png", "/assets/Hero/24.png",
-    "/assets/Hero/25.png", "/assets/Hero/26.png","/assets/Hero/27.png" , "/assets/Hero/28.png", 
-    "/assets/Hero/29.png","/assets/Hero/30.png","/assets/Hero/31.png",
 ];
 
 const innerRingImages = [
-    "/assets/Hero/1.png", "/assets/Hero/2.png", "/assets/Hero/3.png", "/assets/Hero/222.png",
-    "/assets/Hero/5.png", "/assets/Hero/6.png","/assets/Hero/25.png" , "/assets/Hero/7.png", 
-    "/assets/Hero/8.png","/assets/Hero/26.png",
-    "/assets/Hero/30.png", "/assets/Hero/10.png", "/assets/Hero/11.png", "/assets/Hero/12.png",
-    "/assets/Hero/13.png", "/assets/Hero/4.png", "/assets/Hero/15.png"
+    "/assets/Hero/1.png", "/assets/Hero/2.png", "/assets/Hero/3.png", "/assets/Hero/4.png",
+    "/assets/Hero/18.png", "/assets/Hero/20.png",  "/assets/Hero/7.png",
+    "/assets/Hero/8.png", "/assets/Hero/9.png",
+     "/assets/Hero/10.png", "/assets/Hero/11.png", "/assets/Hero/12.png",
+    "/assets/Hero/13.png", "/assets/Hero/14.png", "/assets/Hero/15.png","/assets/Hero/16.png",
+    "/assets/Hero/17.png"
 ];
 
 
@@ -67,10 +68,20 @@ export default function HeroSection() {
     return (
         <div className="relative md:h-[115vh] h-[100vh] flex items-center justify-center overflow-hidden bg-[#0a1412]">
             {/* 🌈 Radial background */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,90,70,1)_0%,rgba(0,60,50,1)_40%,rgba(40,20,25,1)_85%,rgba(80,10,10,1)_100%)] pointer-events-none"></div>
+            <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_center,rgba(60,80,20,1)_0%,rgba(45,65,15,1)_40%,rgba(30,40,20,1)_85%,rgba(20,25,15,1)_100%)] pointer-events-none"></div>
 
-            {/* 🌫️ Top gradient overlay */}
-            <div className="absolute z-20 inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent pointer-events-none" />
+            {/* 🌫️ Top gradient */}
+            <div className="absolute inset-x-0 top-0 h-40 z-20 bg-gradient-to-b from-black/70 to-transparent pointer-events-none"></div>
+
+            {/* 🌫️ Bottom gradient */}
+            <div className="absolute inset-x-0 bottom-0 h-40 z-20 bg-gradient-to-t from-black/70 to-transparent pointer-events-none"></div>
+
+            {/* 🌫️ Left gradient */}
+            <div className="absolute hidden md:block inset-y-0 left-0 w-40 z-20 bg-gradient-to-r from-black/70 to-transparent pointer-events-none"></div>
+
+            {/* 🌫️ Right gradient */}
+            <div className="absolute hidden md:block inset-y-0 right-0 w-40 z-20 bg-gradient-to-l from-black/70 to-transparent pointer-events-none"></div>
+
 
             {/* 🌀 Outer ring */}
             <motion.div
@@ -163,19 +174,19 @@ export default function HeroSection() {
                 <motion.h1
                     initial={{ opacity: 0, y: 25 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.3, duration: 0.4, ease: "easeOut" }}
+                    transition={{ delay: 0.3, duration: 0.5, ease: "easeOut" }}
                     className="text-3xl md:text-5xl font-bold text-white mb-4"
                 >
-                    Market.Trade.Develop.Design & Grow
+                    Plan. Design. Develop. Scale.
                 </motion.h1>
 
                 <motion.p
                     initial={{ opacity: 0, y: 15 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.5, duration: 0.35, ease: "easeOut" }}
-                    className="text-gray-300 text-lg mb-8"
+                    transition={{ delay: 0.5, duration: 0.4, ease: "easeOut" }}
+                    className="text-gray-300 text-sm md:text-lg mb-6"
                 >
-                   Your One-Stop Service Hub — Powered by Strategies That Matter!
+                   Full-Stack Solutions—With Precision, Passion, and Purpose!
                 </motion.p>
 
                 <motion.div
@@ -183,7 +194,7 @@ export default function HeroSection() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.7, duration: 0.3, ease: "easeOut" }}
                 >
-                    <Link href={WEBSITE_SERVICES}>
+                    <Link className="flex justify-center" href={WEBSITE_SERVICES}>
                         <Button text="Discover how" type="button" />
                     </Link>
                 </motion.div>

@@ -44,7 +44,7 @@ export default function ScrollSteps() {
         <div className="absolute left-0 md:left-[30%] top-0 h-full flex justify-center">
           <motion.div
             style={{ height: lineHeight }}
-            className="w-[2px] bg-gradient-to-b from-emerald-400 via-emerald-500/60 to-transparent shadow-[0_0_25px_4px_#10b981]"
+            className="w-[2px] bg-gradient-to-b from-lime-500 via-lime-600/70 to-transparent shadow-[0_0_25px_4px_#84cc16]"
           />
         </div>
 
@@ -61,19 +61,19 @@ export default function ScrollSteps() {
             >
               {/* 🔵 Step Number (left side, glowing) */}
               <div className="absolute left-0 md:left-[27%] flex flex-col items-center">
-                <div className="relative text-6xl font-extrabold text-emerald-400 select-none">
+                <div className="relative text-4xl md:text-6xl font-bold text-lime-500 select-none">
                   <span className="relative z-10">{item.step}</span>
-                  <div className="absolute inset-0 blur-2xl bg-emerald-500 opacity-50"></div>
+                  <div className="absolute inset-0 blur-2xl bg-lime-500 opacity-50"></div>
                 </div>
               </div>
 
               {/* 🟢 Step Box (Right side of line) */}
               <div className="ml-5 md:ml-[35%] bg-gradient-to-b from-[#1a1a1a] to-[#0f0f0f] p-8 md:w-[60%] rounded-2xl shadow-lg border border-emerald-500/10">
-                <p className="md:text-xl text-lg font-black inline-block uppercase bg-slate-900 px-3 py-1 rounded-full tracking-widest text-emerald-500 mb-2">
+                <p className="md:text-xl text-lg font-semibold inline-block uppercase bg-lime-600 px-3 py-1 rounded-full tracking-widest text-white mb-2">
                   Step {item.step}
                 </p>
-                <h3 className="text-2xl font-extrabold  mb-3">{item.title}</h3>
-                <p className="text-gray-500 md:text-lg leading-relaxed">{item.desc}</p>
+                <h3 className="text-2xl font-bold  mb-3">{item.title}</h3>
+                <p className="text-gray-500 font-medium md:text-lg leading-relaxed">{item.desc}</p>
               </div>
             </motion.div>
           ))}

@@ -16,7 +16,7 @@ const services = [
     {
         id: 1,
         title: "Marketing",
-        icon: <FaInstagram className="text-5xl text-emerald-500" />,
+        icon: <FaInstagram className="text-5xl text-lime-600" />,
         description:
             "Your social media is a ghost town. Meanwhile, your ideal customers are buying from your competitors. We don’t just create content—we build sales pipelines. Bullish Pixel delivers a proven strategy that converts scrollers into buyers and drives real revenue. Stop wasting money. Start dominating.",
         mail: "For queries:",
@@ -205,7 +205,7 @@ const services = [
     {
         id: 2,
         title: "Trading",
-        icon: <GiTrade className="text-5xl text-emerald-500" />,
+        icon: <GiTrade className="text-5xl text-lime-600" />,
         description:
             "Tired of losing money to emotional trading? We replace guesswork with a proven system. Get AI-powered strategies, live market analysis, and expert training that turns your trades into consistent profits. This is your last stop before profitability.",
             mail: "For queries: ",
@@ -378,7 +378,7 @@ const services = [
     {
         id: 3,
         title: "Custom Website Development",
-        icon: <MdOutlineDeveloperMode className="text-5xl text-emerald-500" />,
+        icon: <MdOutlineDeveloperMode className="text-5xl text-lime-600" />,
         description:
             "Your competitors' websites are converting 3x more visitors than yours. We build custom, high-speed websites engineered to turn clicks into customers and stop revenue leaks. Your digital domination starts here.",
             mail: "For queries: ",
@@ -553,7 +553,7 @@ const services = [
     {
         id: 4,
         title: "Shopify Development",
-        icon: <SiShopify className="text-5xl text-emerald-500" />,
+        icon: <SiShopify className="text-5xl text-lime-600" />,
         description:
             "Your Shopify store is leaking revenue. Basic templates create abandoned carts, not loyal customers. We build high-converting, custom Shopify stores engineered to maximize sales and build your brand. Stop losing money. Start dominating.",
              mail: "For queries: ",
@@ -726,7 +726,7 @@ const services = [
     {
         id: 5,
         title: "Wordpress Development",
-        icon: <BsWordpress className="text-5xl text-emerald-500" />,
+        icon: <BsWordpress className="text-5xl text-lime-600" />,
         description:
             "Your WordPress site is slow, insecure, and failing to convert. Generic templates are killing your business growth. We build custom, high-speed WordPress websites engineered for maximum conversions and security. Your digital solution is here.",
             mail: "For queries:",
@@ -896,7 +896,7 @@ const services = [
     {
         id: 6,
         title: "LLC Ltd & Pvt",
-        icon: <TbCertificate className="text-5xl text-emerald-500" />,
+        icon: <TbCertificate className="text-5xl text-lime-600" />,
         description:
             "Stop letting legal complexities stall your global business dreams. We handle USA/UK/Pakistan company formation, tax compliance, and filings so you can focus on growth. Your complete business setup solution is here.",
             mail: "For queries: ",
@@ -1065,7 +1065,7 @@ const services = [
     {
         id: 7,
         title: "Coaching/Tutoring",
-        icon: <GiTeacher className="text-5xl text-emerald-500" />,
+        icon: <GiTeacher className="text-5xl text-lime-600" />,
         description:
             "Bullish Pixel builds high-converting online platforms for tutors and coaches, boosting enrollments, revenue, and student satisfaction with seamless management and scalable solutions.",
              mail: "For queries:"
@@ -1249,10 +1249,10 @@ const Servces = () => {
                             <h2 className="font-bold text-2xl py-1">{service.title}</h2>
                         </div>
 
-                        <p className="text-lg h-26 overflow-hidden mt-6 ">
+                        <p className=" md:h-26 overflow-hidden mt-7 text-gray-500 ">
                             {service.description}
                         </p>
-                        <p className="md:text-lg font-black pt-1 text-gray-400">{service.mail} <span className="text-emerald-500">{service.inner}</span></p>
+                        <p className="  pt-1 text-gray-400">{service.mail} <span className="text-lime-600">{service.inner}</span></p>
                         <div className="mt-3">
                             <Button1
                                 onClick={() => setSelectedService(service)}
@@ -1286,7 +1286,7 @@ const Servces = () => {
                             {/* Close Button */}
                             <button
                                 onClick={() => setSelectedService(null)}
-                                className="fixed top-4 right-4 bg-[#2a2828] hover:bg-emerald-600 transition-all p-2 rounded-full text-white"
+                                className="fixed top-4 right-4 bg-[#2a2828] hover:bg-lime-600 transition-all p-2 rounded-full text-white"
                             >
                                 <IoClose className="text-2xl" />
                             </button>
@@ -1296,13 +1296,13 @@ const Servces = () => {
                                 <div className="bg-[#2a2828] inline-block p-2 rounded-xl mb-3 md:mb-4">
                                     {selectedService.icon}
                                 </div>
-                                <h2 className="md:text-5xl text-2xl font-bold mb-2 text-emerald-400">
+                                <h2 className="md:text-5xl text-2xl font-bold mb-2 text-lime-600">
                                     {selectedService.title}
                                 </h2>
                                 <div>
                                     {selectedService.details.map((block, index) => {
                                         if (block.type === "heading")
-                                            return <h1 key={index} className="text-xl md:text-3xl font-bold mt-4 mb-2 text-emerald-400">{block.text}</h1>;
+                                            return <h1 key={index} className="text-xl md:text-3xl font-bold mt-4 mb-2 text-lime-600">{block.text}</h1>;
                                         if (block.type === "Subheading")
                                             return <h5 key={index} className="text-lg text-red-400 font-bold mt-4 mb-2 ">{block.text}</h5>;
                                         if (block.type === "pragraph")
