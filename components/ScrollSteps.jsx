@@ -4,24 +4,28 @@ import { useRef } from "react";
 
 const steps = [
   {
-    step: "01",
+    sideNo:'01',
+    step: "1",
     title: "Discovery & Insight",
-    desc: "We start by deeply understanding your trading psychology (with DYOR), business vision, target audience, and competitive landscape. Through meticulous research and analysis, we identify unique opportunities and challenges — laying a strong, insight-driven foundation tailored to your goals.",
+    desc: "I begin by understanding your goals, ideas, and the problem you’re trying to solve. This includes analyzing your vision, target users, and the core functionality your project needs. Through discussions and research, I identify opportunities, refine requirements, and build a strong foundation to ensure the final product aligns perfectly with your expectations.",
   },
   {
-    step: "02",
-    title: "Customized Strategy",
-    desc: "Guided by these insights, we design a bespoke strategy that aligns perfectly with your objectives. Every tactic, channel, and timeline is strategically chosen to create maximum impact and measurable growth.",
+    sideNo:'02',
+    step: "2",
+    title: "Planning & Architecture",
+    desc: "Once the concept is clear, I plan the structure of the application.This stage includes creating the project architecture, designing user flows, selecting the right technologies and outlining the entire development roadmap. A well-structured plan ensures the project is smooth, scalable, and future-ready.",
   },
   {
-    step: "03",
-    title: "Precision Execution",
-    desc: "Our expert team turns strategy into action with creativity and accuracy. From advanced strategies and compelling content to dynamic design and targeted campaigns, we execute each step with the highest standards of quality and innovation.",
+    sideNo:'03',
+    step: "3",
+    title: "Development & Execution",
+    desc: "Here, the real building begins.I transform ideas into clean, efficient, and reliable code — developing the frontend, backend, API integrations, database structure, and responsive UI/UX components. Throughout development, I focus on performance, security, and scalability to ensure a seamless user experience across all devices.",
   },
   {
-    step: "04",
-    title: "Continuous Optimization & Growth",
-    desc: "True success is an evolving journey. We continuously monitor key metrics, analyze performance data, and fine-tune campaigns — ensuring agility, adaptability, and sustained growth. Your success is our ongoing commitment.",
+    sideNo:'04',
+    step: "4",
+    title: "Testing, Delivery & Support",
+    desc: "Before launching, the application undergoes thorough testing, including functionality checks, performance optimization, responsiveness, and bug fixing.Once everything is polished and ready, the final product is delivered with full deployment support. Even after launch, I provide ongoing assistance to ensure the application runs smoothly and continues to grow with your business needs.",
   },
 ];
 
@@ -62,7 +66,7 @@ export default function ScrollSteps() {
               {/* 🔵 Step Number (left side, glowing) */}
               <div className="absolute left-0 md:left-[27%] flex flex-col items-center">
                 <div className="relative text-4xl md:text-6xl font-bold text-lime-500 select-none">
-                  <span className="relative z-10">{item.step}</span>
+                  <span className="relative z-10">{item.sideNo}</span>
                   <div className="absolute inset-0 blur-2xl bg-lime-500 opacity-50"></div>
                 </div>
               </div>
@@ -72,8 +76,8 @@ export default function ScrollSteps() {
                 <p className="md:text-xl text-lg font-semibold inline-block uppercase bg-lime-600 px-3 py-1 rounded-full tracking-widest text-white mb-2">
                   Step {item.step}
                 </p>
-                <h3 className="text-2xl font-bold  mb-3">{item.title}</h3>
-                <p className="text-gray-500 font-medium md:text-lg leading-relaxed">{item.desc}</p>
+                <h3 className="text-xl font-bold  mb-3">{item.title}</h3>
+                <p className="text-gray-500 text-xs md:text-sm font-medium  ">{item.desc}</p>
               </div>
             </motion.div>
           ))}

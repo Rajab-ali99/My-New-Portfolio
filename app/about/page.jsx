@@ -13,6 +13,8 @@ import { DiRaphael } from "react-icons/di";
 import ScrollSteps from "@/components/ScrollSteps";
 import Faqs from "@/components/FAQS";
 import ContactSection from "@/components/ContactForm";
+import Lines from "@/components/Lines";
+import Typewrite from "@/components/Typewriter";
 
 const AboutPage = () => {
     const [activeIndex, setActiveIndex] = useState(null);
@@ -21,17 +23,17 @@ const AboutPage = () => {
         {
             question: "01. History!",
             answer:
-                "Founded by digital strategist and visionary Malik Asif, Bullish Pixel began as a bold idea fueled by passion for innovation and a deep commitment to client success. Starting in 2018, Malik launched the company with a small, dedicated team focused on transforming brands through data-driven digital marketing and trading expertise. \n\nFrom humble beginnings serving local businesses and e-commerce ventures, Bullish Pixel quickly gained recognition for its creative solutions and results-oriented approach. By 2018, the team had grown significantly, expanding its services across trading, digital marketing, and e-commerce sectors, building a diverse portfolio of forward-thinking clients. \n\nIn 2023, Bullish Pixel marked a new chapter, embracing cutting-edge technology and strategic innovation to become a recognized leader in the digital space. With a talented team of experts and a client-first mindset, the agency expanded its reach nationally and internationally—delivering measurable impact and long-term growth for brands. \n\nAs we look to the future, Bullish Pixel remains grounded in Malik Asif’s founding vision: to bridge technology and human connection, fostering innovation, integrity, and excellence. Our commitment is to empower businesses to not just survive, but thrive in an ever-evolving digital world—one pixel at a time."
+                "My journey in development started with curiosity — a desire to understand how websites and apps work behind the scenes. Over the past few years, that curiosity evolved into a strong skill set shaped by consistent learning, real-world projects, and hands-on experience across multiple technologies. \n\nFrom small UI experiments to full-scale web applications, I have grown into a developer who values problem-solving, performance optimization, and clean architecture. Each project has taught me something new, helping me sharpen my expertise in both frontend and backend development."
         },
         {
             question: "02.My Mission!",
             answer:
-                "At Bullish Pixel, our mission is to empower businesses to excel in the digital era by delivering innovative, data-driven strategies and personalized solutions that drive measurable growth. We are dedicated to being trusted partners, committed to transparency, creativity, and excellence in every project. \n\nWith integrity at our core and a relentless focus on client success, we strive to inspire confidence, exceed expectations, and build lasting relationships. Together, we aim to shape a future where technology and human connection unite to create meaningful impact—pixel by pixel."
+                "I aim to deliver applications that not only look great, but also perform flawlessly and offer meaningful user experiences. With every project, I strive to:\n\n1. Write clean and maintainable code\n\n2. Build secure and scalable systems\n\n3. Deliver on-time, reliable results\n\n4. Add genuine value to clients and users\n\nI am committed to constant growth, keeping myself updated with modern tools, frameworks, and industry trends."
         },
         {
             question: "03. My Vision!",
             answer:
-                "At Bullish Pixel, our vision is to lead the evolution of digital innovation—transforming how businesses engage with their audiences and achieve lasting success. We strive to be a global beacon of creativity, strategic excellence, and client-centric service. \n\nThrough continuous innovation, collaboration, and an unwavering commitment to quality, we empower businesses of all sizes to not only adapt but thrive in the rapidly changing digital world. Together, we’re shaping the future—one pixel at a time."
+                "I aim to grow into a tech professional who:\n\n1. Creates innovative and future-ready web solutions\n\n2. Contributes to impactful digital ecosystems\n\n3. Adapts, evolves, and stays ahead in the fast-changing tech world\n\n4. Turns complex ideas into simple, powerful applications\n\nUltimately, I want to leave a mark through technology — one project at a time."
         },
 
 
@@ -45,27 +47,30 @@ const AboutPage = () => {
         <div className='md:p-10 p-3'>
             <div className='relative'>
                 <div className='relative'>
-                    <Image className='w-full md:mt-13 mt-20 object-cover rounded-4xl h-[250px] md:h-[350px]' src={about.src} height={about.height} width={about.width} alt='about img' />
+                    <Image className='w-full md:mt-13 mt-20 object-contain md:object-cover rounded-4xl h- md:h-[350px]' src={about.src} height={about.height} width={about.width} alt='about img' />
                     <div className="absolute z-20 inset-0 bg-gradient-to-t bottom-0  from-black/90 via-black/10 to-transparent" />
                 </div>
-                {/* <div className='flex justify-center'>
-
-                    <h2 className='md:text-6xl text-4xl absolute font-black bottom-6 text-center z-30'>Hey There! Welcome to <span className='text-lime-600 block'>Bullish <span className="text-red-500">Pixel!</span></span></h2>
-                </div> */}
             </div>
             {/* About */}
             <section>
                 <div className="flex flex-col md:flex-row mt-10 items-center gap-3 md:gap-10">
                     <span className="text-lime-600 font-semibold md:text-sm  px-3 py-1 rounded-full bg-[#121212]">Who I'm?</span>
-                    <h2 className="font-semibold text-3xl md:text-5xl">About Me!</h2>
+                    <div className="flex flex-col items-center justify-center gap-3">
+                        <h2 className="font-semibold text-3xl md:text-5xl">About Me!</h2>
+                        <Lines />
+                    </div>
                 </div>
-                <div className='flex flex-col md:py-10 md:flex-row gap-10 md:gap-5'>
-                    <div className='md:w-[55%]  py-5 md:py-0 md:pt-8 md:p-0 md:text-start md:text-lg font-semibold text-gray-500'>
-                        Welcome to <span className="text-lime-600">Bullish</span> <span className="text-red-500">Pixel</span> — where creativity meets strategy and innovation fuels growth. We’re not just a digital marketing agency we’re a dedicated team of visionaries, problem-solvers, and tech enthusiasts committed to transforming your brand’s digital presence.
+                <div className="px-2 md:px-0">
 
-                        Driven by passion and guided by data, we blend creativity with cutting-edge technology to deliver tailored solutions that inspire, engage, and deliver real results. At Bullish Pixel, every pixel matters — because we believe the future of your business is built one pixel at a time.
+                <Typewrite />
+                </div>
+                <div className='flex flex-col md:pb-10 md:pt-0 md:flex-row gap-5 md:gap-5'>
+                    <div className='md:w-[55%] text-sm md:text-base p-2 py-5 md:py-0 md:pt-5 md:p-0 md:text-start  font-semibold text-gray-500'>
+                        Welcome to the world of development — where creativity meets clean code and purposeful design. I’m Rajab Ali, a dedicated Full Stack Developer (MERN & Next.js) committed to building modern, fast, and user-focused digital experiences.
 
-                        Join us on this journey to redefine digital success with bold ideas, relentless innovation, and a client-first mindset. Let’s create something extraordinary together.
+                        I specialize in transforming ideas into fully functional applications using React, Next.js, Node.js, Express, TypeScript, and MongoDB. What drives me is the satisfaction of turning challenges into elegant solutions and helping businesses grow with the power of technology.
+
+                        Every project I take on is crafted with precision, scalability, and long-term vision — because I believe that great digital products are built with both creativity and engineering discipline. Let’s build something meaningful together!
                     </div>
                     <div className='md:w-[45%]'>
                         <div className=" w-full">
@@ -102,9 +107,9 @@ const AboutPage = () => {
                                                 transition={{ duration: 0.2, ease: "easeInOut" }}
                                                 className="overflow-hidden mt-3"
                                             >
-                                                <div className="text-gray-400 text-sm font-semibold   leading-relaxed">
+                                                <div className="text-gray-400 text-xs md:text-sm font-semibold   leading-relaxed">
                                                     {faq.answer.split("\n\n").map((para, i) => (
-                                                        <p key={i} className="mb-3">
+                                                        <p key={i} className="mb-0.5">
                                                             {para}
                                                         </p>
                                                     ))}
@@ -119,10 +124,15 @@ const AboutPage = () => {
                 </div>
                 <div className="flex flex-col md:flex-row mt-10 items-center gap-3 md:gap-10">
                     <span className="text-lime-600 text-sm font-semibold px-3 py-1 rounded-full bg-[#121212]">About Developer</span>
-                    <h2 className="font-semibold text-3xl md:text-5xl">Meet The Developer!</h2>
+                    <div className="flex flex-col items-center justify-center gap-3">
+                        <h2 className="font-semibold text-3xl md:text-5xl">Meet The Developer!</h2>
+                        <Lines />
+                    </div>
                 </div>
-                <div className="text-gray-500  font-semibold pt-6 md:pt-12  md:text-lg">
-                    <span className="text-lime-600">Malik Asif</span> — the visionary mind behind Bullish Pixel. With deep expertise in <span className="text-white">e-commerce, trading behavior, and digital marketing</span>, his passion for innovation and results fuels our growth. Guided by Malik’s strategic vision and creative leadership, <span className="text-lime-600">Bullish</span> <span className="text-red-500">Pixel</span> continues to set new standards of excellence.
+                <div className="text-gray-500 text-sm md:text-base  font-semibold pt-6 md:pt-12  ">
+                    <span className="text-red-500 text-lg">Rajab <span className="text-lime-600">Ali</span></span> a passionate Full Stack Developer dedicated to building modern, scalable, and user-focused digital experiences. With hands-on expertise in React, Next.js, Node.js, Express, and MongoDB, he designs seamless front-end interfaces and powerful back-end architectures that work smoothly together.
+
+                    My journey in web development is fueled by a strong drive for self-improvement, continuous learning, and solving real-world problems through clean code and creative thinking. I combines technical skill with an eye for design, delivering applications that are not only functional — but fast, responsive, and meaningful for users.
                 </div>
                 <div className="md:mx-20 flex py-10 flex-col md:flex-row gap-10">
                     <div className="md:w-1/2 relative  flex justify-center">
@@ -130,19 +140,27 @@ const AboutPage = () => {
                         <Image className="bg-transparent object-contain z-20  w-[80%] rounded-t-full " src={rjb.src} height={rjb.height} width={rjb.width} alt="founder" />
                         <div className="absolute top-1/2 -translate-y-1/2 w-72 h-72 rounded-full bg-lime-600/80 blur-3xl z-10" />
 
-                        {/* <div className="md:text-5xl text-3xl absolute z-20   font-semibold text-lime-600 drop-shadow-[0_0_20px_rgba(16,185,129,0.8)]">
-                            Rajab <span className="text-red-500 drop-shadow-[0_0_20px_rgba(239,68,68,0.8)]">Ali</span>
-                        </div> */}
 
                     </div>
-                    <div className="md:w-1/2 flex flex-col justify-between">
-                        <div className="font-semibold md:pt-30 text-center md:text-lg md:text-left p-3 md:p-0 text-gray-500">
-                            At <span className="text-lime-600">Bullish <span className="text-red-500">Pixel</span></span>, we envision a future where data-driven creativity and innovation empower every brand to rise above the noise. Our mission is to bridge the gap between <span className="text-white">technology and human connection</span> — transforming ideas into measurable success. <span className="text-white">With Malik Asif’s forward-thinking leadership</span>, we’re building a digital ecosystem where businesses not only grow but thrive with purpose. From AI-powered marketing to next-generation trading insights, Bullish Pixel is committed to leading the digital revolution with transparency, performance, and creativity at its core.
+                    <div className="md:w-1/2 flex flex-col gap-5 justify-center">
+                        <div className="font-semibold md:pt-8 text-sm md:text-sm md:text-left p-3 md:p-0 text-gray-500">
+                            <p>
 
-                            We don’t just follow trends — we create them. <span className="text-white">The future is bullish, and it’s pixel by pixel.</span>
+                                As a <span className="text-white">MERN Stack Developer</span>, I am committed to building high-quality, efficient, and user-centered web applications tailored to the unique needs of each client. With over <span className="text-white">3 years of practical experience</span> in full-stack development, I specialize in <span className="text-white">React.js, Next.js, TypeScript, Node.js, Express.js, and MongoDB</span>, delivering scalable, secure, and performance-driven solutions.
+
+                            </p>
+                            <p>
+                                At the core of every project, Rajab aims to merge technology with human experience. Whether it's building a full-stack web application, designing intuitive UI/UX, or implementing secure and <span className="text-white">optimized APIs</span>, he focuses on <span className="text-white">crafting solutions</span> that bring real value to clients and businesses.
+
+                                With a forward-thinking mindset and a <span className="text-white">commitment to excellence</span>, Rajab is shaping his place in the digital world — one project at a time.
+                            </p>
+                            <p>
+
+                            Driven by a passion for <span className="text-white">solving complex challenges</span> and developing innovative solutions, I continuously expand my skills and stay updated with the latest tools, technologies, and industry trends to ensure that my work remains modern, reliable, and impactful.
+                            </p>
                         </div>
-                        <div className="flex gap-5 flex-col">
-                            <div className="flex gap-5 pt-10 md:flex-row flex-col">
+                        <div className="flex gap-2 flex-col">
+                            <div className="flex gap-2 md:gap-5 md:flex-row flex-col">
                                 <div className="flex justify-center md:justify-baseline items-center px-3 py-1 rounded-full  gap-1 bg-[#1f1d1d]/60">
                                     <DiRaphael className="text-lime-600 text-3xl" />
                                     <div className=" font-semibold">Visionary Thinker</div>
@@ -150,11 +168,11 @@ const AboutPage = () => {
                                 </div>
                                 <div className="flex items-center justify-center md:justify-baseline px-3 py-1 rounded-full  gap-1 bg-[#1f1d1d]/60">
                                     <DiRaphael className="text-lime-600 text-3xl" />
-                                    <div className=" font-semibold">Empathetic Leader</div>
+                                    <div className=" font-semibold">Innovative Developer</div>
 
                                 </div>
                             </div>
-                            <div className="flex gap-5 md:flex-row flex-col">
+                            <div className="flex gap-2 md:gap-5 md:flex-row flex-col">
                                 <div className="flex items-center justify-center md:justify-baseline px-3 py-1 rounded-full gap-1 bg-[#1f1d1d]/60">
                                     <DiRaphael className="text-lime-600 text-3xl" />
                                     <div className=" font-semibold">Creative Problem-Solver</div>
@@ -162,20 +180,20 @@ const AboutPage = () => {
                                 </div>
                                 <div className="flex items-center justify-center md:justify-baseline px-3 py-1 rounded-full  gap-1 bg-[#1f1d1d]/60">
                                     <DiRaphael className="text-lime-600 text-3xl" />
-                                    <div className=" font-semibold">Growth-Focused Pioneer</div>
+                                    <div className=" font-semibold">Solution-Driven Engineer</div>
 
                                 </div>
-                                
+
                             </div>
-                            <div className="flex gap-5 md:flex-row flex-col">
-                                 <div className="flex items-center justify-center md:justify-baseline px-3 py-1 rounded-full  gap-1 bg-[#1f1d1d]/60">
+                            <div className="flex gap-2 md:gap-5 md:flex-row flex-col">
+                                <div className="flex items-center justify-center md:justify-baseline px-3 py-1 rounded-full  gap-1 bg-[#1f1d1d]/60">
                                     <DiRaphael className="text-lime-600 text-3xl" />
                                     <div className=" font-semibold">Strategic Innovator</div>
 
                                 </div>
-                                 <div className="flex items-center justify-center md:justify-baseline px-3 py-1 rounded-full  gap-1 bg-[#1f1d1d]/60">
+                                <div className="flex items-center justify-center md:justify-baseline px-3 py-1 rounded-full  gap-1 bg-[#1f1d1d]/60">
                                     <DiRaphael className="text-lime-600 text-3xl" />
-                                    <div className=" font-semibold">Integrity-Driven Professional</div>
+                                    <div className=" font-semibold">Performance-Focused Coder</div>
 
                                 </div>
                             </div>
@@ -187,10 +205,14 @@ const AboutPage = () => {
             </section>
             <div className="flex justify-center py-20 items-center flex-col ">
                 <span className="text-lime-600 text-sm font-semibold px-3 mb-3 py-1 rounded-full bg-[#121212]">How We Work</span>
-                <h2 className="text-3xl md:text-5xl font-semibold text-center text-white ">
-                    Our 4 Stage Process
+                <div className="flex flex-col items-center justify-center gap-4">
 
-                </h2>
+                    <h2 className="text-3xl md:text-5xl font-semibold text-center text-white ">
+                        Our 4 Stage Process
+
+                    </h2>
+                    <Lines />
+                </div>
             </div>
 
             <ScrollSteps />
@@ -257,7 +279,7 @@ const AboutPage = () => {
                     </div>
                 </div>
             </div> */}
-            
+
             <ContactSection />
 
         </div>

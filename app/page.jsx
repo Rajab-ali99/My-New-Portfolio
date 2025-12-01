@@ -18,12 +18,13 @@ import Service from "@/components/Service";
 import HerroSection from "@/components/HerroSection";
 import Link from "next/link";
 import { WEBSITE_SERVICES } from "@/routes/WebsiteRoutes";
+import Lines from "@/components/Lines";
 export default function Home() {
   return (
     <div >
       <HerroSection />
       {/* HeroSection image */}
-      <div className="flex md:overflow-hidden relative justify-center ">
+      <div className="md:flex md:overflow-hidden hidden  relative justify-center ">
         <div className="absolute inset-0 bg-gradient-to-t from-lime-500/10 via-lime-500/50 to-transparent blur-3xl" />
 
         <div className="absolute z-20 inset-0 bg-gradient-to-t bottom-0  from-black/90 via-black/10 to-transparent" />
@@ -60,7 +61,7 @@ export default function Home() {
               <IoStarSharp className="text-lime-600" />
 
             </div>
-            <div className="text-xl">99+    5 star Reviews</div>
+            <div className="text-xl">10+    5 star Reviews</div>
           </div>
         </div>
       </div>
@@ -69,7 +70,11 @@ export default function Home() {
       <section className="md:pt-20 pt-8 px-5 md:px-10">
         <div className="flex flex-col md:flex-row items-center gap-3 md:gap-10">
           <span className="text-lime-600 md:text-xl font-semibold  px-3 py-1 rounded-full bg-[#1f1d1d]">Services</span>
+          <div className="flex flex-col items-center justify-center gap-3">
+
           <h2 className="font-semibold text-3xl md:text-5xl">What we are offering</h2>
+          <Lines/>
+          </div>
         </div>
         <div className="pt-5 flex justify-center md:justify-end">
           <Link href={WEBSITE_SERVICES} >
@@ -86,9 +91,12 @@ export default function Home() {
         <div className="flex px-10 pb-3 md:pb-8 flex-col md:flex-row items-center gap-3">
           <span className="text-lime-600 md:text-xl font-semibold px-3 py-1 rounded-full bg-[#1f1d1d]">Why us?</span>
           <div className="mb-5 md:mb-0">
+            <p className="text-center text-xs md:text-base font-semibold text-gray-500">Top-Quality Results — Every Time</p>
+            <div className="flex flex-col items-center justify-center gap-3">
 
             <h2 className="font-semibold text-4xl md:text-5xl">Our Specialities</h2>
-            <p className="text-center text-xs md:text-base font-semibold text-gray-500">Top-Quality Results — Every Time</p>
+            <Lines/>
+            </div>
           </div>
         </div>
         <div className="text-slate-600 font-semibold text-md md:text-xl flex md:justify-end pb-6">

@@ -159,4 +159,65 @@ body {
     @apply bg-background text-foreground;
   }
 }
+.sideline{
+    background-color:  rgb(101, 163, 13);
+    height: 8px;
+    margin: 0 10px;
+    transform: rotate(45deg);
+    width: 8px;
+}
+.midline{
+    background-color:  rgb(101, 163, 13);
+    border-radius: 4px;
+    height: 4px;
+    position: relative;
+    width: 180px;
+}
+.innercircle{ 
+    animation: animate 3s  infinite alternate;
+    animation-timing-function: linear;
+    background-color: #ffffff;
+    border: 1px solid  rgb(101, 163, 13);
+    bottom: 0;
+    height: 10px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    transform: rotate(45deg);
+    width: 10px;
+}
+@keyframes animate{
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}
+/* Width of the scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px; 
+}
+
+/* Track (background) - set to transparent */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+/* Handle (the moving part) */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #555; /* Dark grey */
+  border-radius: 20px;    /* Roundness */
+}
+
+/* Remove Arrows/Buttons */
+.custom-scrollbar::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Firefox compatibility */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #555 transparent;
+}
 

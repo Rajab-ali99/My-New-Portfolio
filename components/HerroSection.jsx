@@ -177,7 +177,7 @@ export default function HeroSection() {
                     transition={{ delay: 0.3, duration: 0.5, ease: "easeOut" }}
                     className="text-3xl md:text-5xl font-bold text-white mb-4"
                 >
-                    Plan. Design. Develop. Scale.
+                   Fast. Secure. Scalable. Modern.
                 </motion.h1>
 
                 <motion.p
