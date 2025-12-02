@@ -56,7 +56,7 @@ const AboutPage = () => {
                 <div className="flex flex-col md:flex-row mt-10 items-center gap-3 md:gap-10">
                     <span className="text-lime-600 font-semibold md:text-sm  px-3 py-1 rounded-full bg-[#121212]">Who I'm?</span>
                     <div className="flex flex-col items-center justify-center gap-3">
-                        <h2 className="font-semibold text-3xl md:text-5xl">About Me!</h2>
+                        <h2 className="font-bold text-3xl md:text-5xl">About <span className="text-lime-500">Me!</span></h2>
                         <Lines />
                     </div>
                 </div>
@@ -125,7 +125,7 @@ const AboutPage = () => {
                 <div className="flex flex-col md:flex-row mt-10 items-center gap-3 md:gap-10">
                     <span className="text-lime-600 text-sm font-semibold px-3 py-1 rounded-full bg-[#121212]">About Developer</span>
                     <div className="flex flex-col items-center justify-center gap-3">
-                        <h2 className="font-semibold text-3xl md:text-5xl">Meet The Developer!</h2>
+                        <h2 className="font-semibold text-3xl md:text-5xl">Meet The <span className="text-lime-500">Developer!</span></h2>
                         <Lines />
                     </div>
                 </div>
@@ -207,8 +207,8 @@ const AboutPage = () => {
                 <span className="text-lime-600 text-sm font-semibold px-3 mb-3 py-1 rounded-full bg-[#121212]">How We Work</span>
                 <div className="flex flex-col items-center justify-center gap-4">
 
-                    <h2 className="text-3xl md:text-5xl font-semibold text-center text-white ">
-                        Our 4 Stage Process
+                    <h2 className="text-3xl md:text-5xl font-bold text-center text-white ">
+                        Our 4 Stage <span className="text-lime-500">Process</span>
 
                     </h2>
                     <Lines />

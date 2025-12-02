@@ -24,7 +24,7 @@ export default function Home() {
     <div >
       <HerroSection />
       {/* HeroSection image */}
-      <div className="md:flex md:overflow-hidden hidden  relative justify-center ">
+      <div className="flex md:overflow-hidden   relative justify-center ">
         <div className="absolute inset-0 bg-gradient-to-t from-lime-500/10 via-lime-500/50 to-transparent blur-3xl" />
 
         <div className="absolute z-20 inset-0 bg-gradient-to-t bottom-0  from-black/90 via-black/10 to-transparent" />
@@ -72,13 +72,13 @@ export default function Home() {
           <span className="text-lime-600 md:text-xl font-semibold  px-3 py-1 rounded-full bg-[#1f1d1d]">Services</span>
           <div className="flex flex-col items-center justify-center gap-3">
 
-          <h2 className="font-semibold text-3xl md:text-5xl">What we are offering</h2>
-          <Lines/>
+            <h2 className="font-bold text-3xl md:text-5xl">What we are <span className="text-lime-500">offering</span></h2>
+            <Lines />
           </div>
         </div>
         <div className="pt-5 flex justify-center md:justify-end">
           <Link href={WEBSITE_SERVICES} >
-            <Button text='VIEW ALL SERVICES' type='button' />
+            <Button className='' text='View All Services' type='button' />
           </Link>
         </div>
         <div className="md:py-25 py-8">
@@ -89,19 +89,19 @@ export default function Home() {
       {/* Our Expertise Section */}
       <section>
         <div className="flex px-10 pb-3 md:pb-8 flex-col md:flex-row items-center gap-3">
-          <span className="text-lime-600 md:text-xl font-semibold px-3 py-1 rounded-full bg-[#1f1d1d]">Why us?</span>
+          <span className="text-lime-600 md:text-xl font-semibold px-3 py-1 rounded-full bg-[#1f1d1d]">Why me?</span>
           <div className="mb-5 md:mb-0">
             <p className="text-center text-xs md:text-base font-semibold text-gray-500">Top-Quality Results — Every Time</p>
             <div className="flex flex-col items-center justify-center gap-3">
 
-            <h2 className="font-semibold text-4xl md:text-5xl">Our Specialities</h2>
-            <Lines/>
+              <h2 className="font-bold text-4xl md:text-5xl">My <span className="text-lime-500">Expertise</span></h2>
+              <Lines />
             </div>
           </div>
         </div>
         <div className="text-slate-600 font-semibold text-md md:text-xl flex md:justify-end pb-6">
           <div className="md:w-xl text-center md:text-left w-[250px] mx-auto md:mx-10">
-            Our top-notch <span className="text-lime-500">Services <span className="text-red-500">Hub</span></span> not only delivers impressive results but also dazzles our clients with remarkable statistics. We pride ourselves on our ability to amaze customers with tangible outcomes and eye-catching figures.
+            "Specializing in Next.js and React, I deliver pixel-perfect websites that are fast, secure, and SEO-ready. From the first line of code to the final launch, I ensure a smooth process and a product that exceeds expectations."
 
           </div>
         </div>
@@ -113,23 +113,23 @@ export default function Home() {
 
 
             <div className="bg-slate-50/25 h-[110px] md:h-[180px] gap-2 flex flex-col items-center justify-center w-[110px] md:w-[180px] rounded-full  ">
-              <div className="md:text-5xl text-3xl font-semibold ">7+</div>
-              <div className="md:font-semibold text-gray-100 text-xs md:text-lg">Years of Experience</div>
+              <div className="md:text-5xl text-3xl font-semibold ">3+</div>
+              <div className="md:font-semibold text-gray-100 text-xs md:text-lg">Years Experience</div>
             </div>
 
             <div className="bg-slate-50/25 relative right-5 bottom-5 h-[110px] w-[110px] md:h-[180px] gap-2 flex flex-col items-center justify-center md:w-[180px] rounded-full  ">
-              <div className="md:text-5xl text-3xl font-semibold ">110+</div>
-              <div className="md:font-semibold text-gray-100 text-xs md:text-lg">Successful Projects</div>
+              <div className="md:text-5xl text-3xl font-semibold ">100%</div>
+              <div className="md:font-semibold text-gray-100 text-xs md:text-lg">Responsive</div>
             </div>
 
             <div className="bg-slate-50/25 relative right-10  h-[110px] w-[110px] md:h-[180px] gap-2 flex flex-col items-center justify-center md:w-[180px] rounded-full  ">
-              <div className="md:text-5xl text-3xl font-semibold ">101+</div>
-              <div className="md:font-semibold text-gray-100 text-xs md:text-lg">Happy Clients</div>
+              <div className="md:text-5xl text-3xl font-semibold ">100%</div>
+              <div className="md:font-semibold text-gray-100 text-xs md:text-lg">Performance</div>
             </div>
 
             <div className="bg-slate-50/25 relative right-15 bottom-5 h-[110px] w-[110px] md:h-[180px] gap-2 flex flex-col items-center justify-center md:w-[180px] rounded-full  ">
-              <div className="md:text-5xl text-3xl font-semibold ">99+</div>
-              <div className="md:font-semibold text-gray-100 text-xs md:text-lg">5 Star Reviews</div>
+              <div className="md:text-5xl text-3xl font-semibold ">24/7</div>
+              <div className="md:font-semibold text-gray-100 text-xs md:text-lg">Support</div>
             </div>
 
 
@@ -140,22 +140,22 @@ export default function Home() {
                 <div className="p-2 rounded-md mb-4 bg-gray-900/40 border-lime-600 border">
                   < BsFillRocketFill className="text-lime-600 text-4xl" />
                 </div>
-                <h3 className="md:text-2xl text-2xl font-semibold">Proven Performance</h3>
-                <p className="pt-2 text-gray-300 text-sm">We deliver measurable results. Our data-driven approach is built to meet and exceed your key performance indicators.</p>
+                <h3 className="md:text-2xl text-xl font-semibold">High-Speed Performance</h3>
+                <p className="pt-2 text-gray-300 text-sm">I build optimized, fast-loading applications using React & Next.js. A faster website means better SEO rankings and happier users.</p>
               </div>
               <div className="p-5 flex rounded-xl flex-col gap-1 items-center bg-[#1f1d1d]/60 justify-center ">
                 <div className="p-2 rounded-md mb-4 bg-gray-900/40 border-lime-600 border">
                   < SiHiveBlockchain className="text-lime-600 text-4xl" />
                 </div>
-                <h3 className="md:text-2xl text-xl font-semibold">Strategies Sculpted for You</h3>
-                <p className="pt-2 text-gray-300 text-sm">We build custom strategies from the ground up, tailored to your specific goals and market challenges.</p>
+                <h3 className="md:text-2xl text-xl font-semibold">100% Custom Code</h3>
+                <p className="pt-2 text-gray-300 text-sm">No generic templates or bloated site builders. I write clean, scalable code tailored exactly to your specific business requirements.</p>
               </div>
               <div className="p-5 flex rounded-xl flex-col gap-1 items-center bg-[#1f1d1d]/60 justify-center ">
                 <div className="p-2 rounded-md mb-4 bg-gray-900/40 border-lime-600 border">
                   < PiUserFocus className="text-lime-600 text-4xl" />
                 </div>
-                <h3 className="md:text-2xl text-xl font-semibold">Your Success is Our Success</h3>
-                <p className="pt-2 text-gray-300 text-sm">We act as a true extension of your team, fully invested in achieving your long-term vision.</p>
+                <h3 className="md:text-2xl text-xl font-semibold">Full Ownership</h3>
+                <p className="pt-2 text-gray-300 text-sm">You get 100% ownership of the source code and assets. No hidden lock-ins—just a transparent partnership focused on your growth.</p>
               </div>
             </div>
             <div className="flex flex-col my-8 md:my-0 md:flex-row justify-center items-center gap-3">
@@ -189,28 +189,31 @@ export default function Home() {
           <div className=" relative">
 
             <Image className="rounded-3xl hidden md:block opacity-30" src={dev.src} height={dev.height} width={dev.width} alt="developer img" />
-            <Image className="rounded-3xl  md:hidden opacity-50" src={devM.src} height={devM.height} width={devM.width} alt="developer img" />
-            <div className="absolute bottom-0 p-10 left-0">
-              <h2 className="font-semibold md:ps-20 text-lime-600 text-9xl">110%</h2>
-              <p className="text-2xl md:text-3xl text-lime-600 font-semibold">Your Business Growth is definite with Bullish <span className="text-red-500">Pixel</span></p>
-              <p className="md:text-slate-500 text-lg md:text-2xl mt-40 md:mt-10">Your businesses & your thoughts must have to grow with Bullish Pixel Strategies.
+            <Image className="rounded-3xl  md:hidden opacity-30" src={devM.src} height={devM.height} width={devM.width} alt="developer img" />
+            <div className="absolute bottom-0 p-5 md:p-10 left-0">
+              <div className="flex flex-col md:flex-row items-center gap-3">
+
+                <h2 className="font-bold md:ps-20 text-lime-600 text-5xl">100%</h2>
+                <p className="text-2xl md:text-3xl text-lime-600 font-semibold">Google Lighthouse Score</p>
+              </div>
+              <p className="text-slate-400  md:text-xl mt-40 md:mt-10">Don't lose customers to slow loading times. I build Next.js applications optimized for core web vitals, ensuring lightning-fast performance and higher SEO rankings
 
               </p>
             </div>
           </div>
-          <div className=" md:w-[30vw] min-h-[48vh] md:min-h-[75vh] p-5 md:p-10 flex flex-col  justify-between rounded-3xl bg-[#1f1d1d]">
-            <div>
-              <h2 className="text-lime-600 md:text-9xl text-7xl font-semibold">54<span className="">M+</span></h2>
-              <p className="font-semibold text-3xl mt-3 text-center md:text-start  md:text-4xl">Revenue Generated</p>
+          <div className=" md:w-[30vw] min-h-[38vh] md:min-h-[75vh] p-5 justify-evenly  flex flex-col  mg:justify-between rounded-3xl bg-[#1f1d1d]">
+            <div className="flex flex-col md:flex-row items-center gap-3">
+              <h2 className="text-lime-600 md:text-4xl text-2xl font-bold">24/7</h2>
+              <p className="font-semibold  text-xl  text-center md:text-start  md:text-2xl">Uptime & Reliability</p>
             </div>
             <div>
-              <p className="text-slate-500 text-sm md:text-lg">Our services hub strategies have generated over 54M+ in revenue for our clients, demonstrating our proven ability to drive substantial business growth.</p>
+              <p className="text-slate-500 text-sm md:text-lg">Rest easy knowing your digital assets are secure. I implement robust error handling and scalable cloud architecture (Vercel/AWS) to keep your business online, always.</p>
             </div>
           </div>
         </div>
       </section>
 
-      
+
 
       {/* Contact section */}
 

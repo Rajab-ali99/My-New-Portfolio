@@ -14,7 +14,7 @@ import {
 import logoD from '@/public/assets/logoD.png'
 import Link from 'next/link';
 import Image from 'next/image';
-import { WEBSITE_ABOUT, WEBSITE_CONTACT, WEBSITE_HOME, WEBSITE_PROJECTS, WEBSITE_REVIEWS, WEBSITE_SERVICES } from '@/routes/WebsiteRoutes';
+import { WEBSITE_ABOUT, WEBSITE_CONTACT, WEBSITE_HOME, WEBSITE_PROJECTS, WEBSITE_FAQS, WEBSITE_SERVICES } from '@/routes/WebsiteRoutes';
 
 
 const Sidebar = ({ open, onClose }) => {
@@ -42,7 +42,7 @@ const Sidebar = ({ open, onClose }) => {
           <Link  onClick={onClose} href={WEBSITE_ABOUT} className="text-lime-600 text-xl py-1 px-3 rounded-xl flex items-center gap-3"><span className='text-3xl'><HiUser/></span>About</Link>
           <Link  onClick={onClose} href={WEBSITE_SERVICES} className="text-lime-600 text-xl py-1 px-3 rounded-xl flex items-center gap-3"><span className='text-3xl'><HiBadgeCheck/></span>Services</Link>
           <Link onClick={onClose} href={WEBSITE_PROJECTS} className="text-lime-600 text-xl py-1 px-3 rounded-xl flex items-center gap-3"><span className='text-3xl'><HiFolder/></span>Projects</Link>
-          <Link onClick={onClose} href={WEBSITE_REVIEWS} className="text-lime-600 text-xl py-1 px-3 rounded-xl flex items-center gap-3"><span className='text-3xl'><HiChatAlt2/></span>Reviews</Link>
+          <Link onClick={onClose} href={WEBSITE_FAQS} className="text-lime-600 text-xl py-1 px-3 rounded-xl flex items-center gap-3"><span className='text-3xl'><HiChatAlt2/></span>FAQ's</Link>
           <Link onClick={onClose} href={WEBSITE_CONTACT} className="text-lime-600 text-xl py-1 px-3 rounded-xl flex items-center gap-3"><span className='text-3xl'><HiMail/></span>Contact</Link>
         </ul>
 

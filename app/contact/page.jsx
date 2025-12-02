@@ -12,7 +12,8 @@ import {
     Instagram,
     Clock,
 } from "lucide-react";
-import { BsTwitterX } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa";
+
 
 
 export default function ContactPage() {
@@ -21,10 +22,10 @@ export default function ContactPage() {
             <div style={{ zIndex: 0 }} className="fixed inset-0 bg-gradient-to-b from-lime-600/20 via-transparent to-transparent blur-2xl" />
             <div className="z-10 relative">
 
-                <div className="flex flex-col md:flex-row mt-10 mb-10 px-10 items-center  md:gap-10">
-                    <span className="text-lime-600 font-semibold md:text-sm  px-3 py-1 rounded-full bg-[#121212]">Contact</span>
+                <div className="flex flex-col  mt-10 mb-10 px-10 items-center gap-2">
+                    <span className="text-lime-600 font-semibold text-sm  px-3 py-1 rounded-full bg-[#121212]">Contact me!</span>
                     <div className="flex flex-col items-center justify-center gap-3">
-                        <h2 className="font-semibold text-3xl md:text-5xl">Get In Touch!</h2>
+                        <h2 className="font-bold text-3xl md:text-5xl">Get In <span className="text-lime-500">Touch!</span></h2>
                         <Lines />
                     </div>
                 </div>                <div className="max-w-6xl bg-slate-500/10 py-6 rounded-xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-2 px-6">
@@ -32,19 +33,19 @@ export default function ContactPage() {
                     <div className="bg-[#111]/40 rounded-3xl p-6 border border-white/10">
                         <div className="flex items-center gap-3 mb-3">
                             <Phone className="text-lime-600 w-6 h-6" />
-                            <h3 className="text-lg font-semibold">Hotline:</h3>
+                            <h3 className="md:text-lg font-semibold">Hotline:</h3>
                         </div>
-                        <p className="text-xl font-semibold text-white/90">+92 311 7787 395</p>
+                        <p className="text-sm md:text-base font-semibold text-white/50">+92 309 3060 947</p>
                     </div>
 
                     {/* Address */}
                     <div className="bg-[#111]/40 rounded-3xl p-6 border border-white/10">
                         <div className="flex items-center gap-3 mb-3">
                             <MapPin className="text-lime-600 w-6 h-6" />
-                            <h3 className="text-lg font-semibold">Address:</h3>
+                            <h3 className="md:text-lg font-semibold">Address:</h3>
                         </div>
-                        <p className="text-lg font-medium text-white/90">
-                            Lahore, Pakistan
+                        <p className="text-sm md:text-base font-medium text-white/50">
+                            Faisalabad, Pakistan
                         </p>
                     </div>
 
@@ -52,10 +53,10 @@ export default function ContactPage() {
                     <div className="bg-[#111]/40 rounded-3xl p-6 border border-white/10">
                         <div className="flex items-center gap-3 mb-3">
                             <Mail className="text-lime-600 w-6 h-6" />
-                            <h3 className="text-lg font-semibold">Email:</h3>
+                            <h3 className="md:text-lg font-semibold">Email:</h3>
                         </div>
-                        <p className="text-lg font-medium text-white/90 ">
-                            hello@bullishpixel.com
+                        <p className="text-sm md:text-base font-medium text-white/50 ">
+                            developer@rajabali.com
                         </p>
                     </div>
 
@@ -63,32 +64,32 @@ export default function ContactPage() {
                     <div className="bg-[#111]/40 rounded-3xl p-6 border border-white/10">
                         <div className="flex items-center gap-3 mb-4">
                             <Clock className="text-lime-600 w-6 h-6" />
-                            <h3 className="text-lg font-semibold">Follow Us:</h3>
+                            <h3 className="md:text-lg font-semibold">Follow Us:</h3>
                         </div>
                         <div className="flex items-center gap-4">
                             <a
                                 target="_blank" href="http://facebook.com/BullishPixel"
-                                className="p-3 rounded-full border border-white/10 hover:bg-lime-600 transition"
+                                className="p-2 rounded-full border border-white/10 hover:bg-lime-600 transition"
                             >
-                                <Facebook className="w-5 h-5" />
+                                <Facebook className="w-6 h-6" />
                             </a>
                             <a
                                 target="_blank" href="http://x.com/BullishPixel"
-                                className="p-3 rounded-full border border-white/10 hover:bg-lime-600 transition"
+                                className="p-2 rounded-full border border-white/10 hover:bg-lime-600 transition"
                             >
-                                <BsTwitterX className="w-5 h-5" />
+                                <FaGithub className="w-6 h-6" />
                             </a>
                             <a
                                 target="_blank" href="http://linkedin.com/in/bullishpixel"
-                                className="p-3 rounded-full border border-white/10 hover:bg-lime-600 transition"
+                                className="p-2 rounded-full border border-white/10 hover:bg-lime-600 transition"
                             >
-                                <Linkedin className="w-5 h-5" />
+                                <Linkedin className="w-6 h-6" />
                             </a>
                             <a
                                 target="_blank" href="http://instagram.com/bullishpixel"
-                                className="p-3 rounded-full border border-white/10 hover:bg-lime-600 transition"
+                                className="p-2 rounded-full border border-white/10 hover:bg-lime-600 transition"
                             >
-                                <Instagram className="w-5 h-5" />
+                                <Instagram className="w-6 h-6" />
                             </a>
                         </div>
                     </div>
@@ -97,9 +98,9 @@ export default function ContactPage() {
                     <div className="bg-[#111]/40 rounded-3xl p-6 border border-white/10 md:col-span-2 lg:col-span-4">
                         <div className="flex items-center gap-3 mb-3">
                             <Clock className="text-lime-600 w-6 h-6" />
-                            <h3 className="text-lg font-semibold">Opening Hours:</h3>
+                            <h3 className="md:text-lg font-semibold">Opening Hours:</h3>
                         </div>
-                        <div className="text-white/90 space-y-1 text-lg font-medium">
+                        <div className="text-white/50 space-y-1 text-sm md:text-base font-medium">
                             <p>Mon to Fri: 11.00AM - 9.00PM</p>
                             <p>Sat: 12.00pM - 6.30PM</p>
                             <p>Sun: Closed</p>

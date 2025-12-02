@@ -1,5 +1,5 @@
 'use client'
-import { WEBSITE_ABOUT, WEBSITE_CONTACT, WEBSITE_HOME, WEBSITE_PROJECTS, WEBSITE_REVIEWS, WEBSITE_SERVICES } from '@/routes/WebsiteRoutes'
+import { WEBSITE_ABOUT, WEBSITE_CONTACT, WEBSITE_HOME, WEBSITE_PROJECTS, WEBSITE_FAQS, WEBSITE_SERVICES } from '@/routes/WebsiteRoutes'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useState } from 'react'
@@ -29,7 +29,7 @@ const Navbar = () => {
         <Link className={`py-1 px-5 hover:text-lime-600 transition-all duration-500  rounded-full ${pathName === WEBSITE_ABOUT && 'text-white hover:bg-black rounded-full bg-lime-600'}`} href={WEBSITE_ABOUT}>About</Link>
         <Link className={`py-1 px-5 hover:text-lime-600 transition-all duration-500  rounded-full ${pathName === WEBSITE_SERVICES && 'text-white hover:bg-black rounded-full bg-lime-600'}`} href={WEBSITE_SERVICES}>Services</Link>
         <Link className={`py-1 px-5 hover:text-lime-600 transition-all duration-500  rounded-full ${pathName === WEBSITE_PROJECTS && 'text-white hover:bg-black rounded-full bg-lime-600'}`} href={WEBSITE_PROJECTS}>Projects</Link>
-        <Link className={`py-1 px-5 hover:text-lime-600 transition-all duration-500  rounded-full ${pathName === WEBSITE_REVIEWS && 'text-white hover:bg-black rounded-full bg-lime-600'}`} href={WEBSITE_REVIEWS}>Reviews</Link>
+        <Link className={`py-1 px-5 hover:text-lime-600 transition-all duration-500  rounded-full ${pathName === WEBSITE_FAQS && 'text-white hover:bg-black rounded-full bg-lime-600'}`} href={WEBSITE_FAQS}>FAQ's</Link>
         <Link className={`py-1 px-5 hover:text-lime-600 transition-all duration-500  rounded-full ${pathName === WEBSITE_CONTACT && 'text-white hover:bg-black rounded-full bg-lime-600'}`} href={WEBSITE_CONTACT}>Contact</Link>
 
 
