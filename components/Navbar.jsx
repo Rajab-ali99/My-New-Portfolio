@@ -25,12 +25,12 @@ const Navbar = () => {
       </div>
       </Link>
       <div className='bg-black py-2 hidden font font-medium px-4 border  border-slate-700 rounded-full text-white md:flex items-center gap-5 '>
-        <Link className={`py-1 px-5 hover:text-lime-600 transition-all duration-500  rounded-full ${pathName === WEBSITE_HOME && 'text-white hover:bg-black rounded-full bg-lime-600'}`} href={WEBSITE_HOME}>Home</Link>
-        <Link className={`py-1 px-5 hover:text-lime-600 transition-all duration-500  rounded-full ${pathName === WEBSITE_ABOUT && 'text-white hover:bg-black rounded-full bg-lime-600'}`} href={WEBSITE_ABOUT}>About</Link>
-        <Link className={`py-1 px-5 hover:text-lime-600 transition-all duration-500  rounded-full ${pathName === WEBSITE_SERVICES && 'text-white hover:bg-black rounded-full bg-lime-600'}`} href={WEBSITE_SERVICES}>Services</Link>
-        <Link className={`py-1 px-5 hover:text-lime-600 transition-all duration-500  rounded-full ${pathName === WEBSITE_PROJECTS && 'text-white hover:bg-black rounded-full bg-lime-600'}`} href={WEBSITE_PROJECTS}>Projects</Link>
-        <Link className={`py-1 px-5 hover:text-lime-600 transition-all duration-500  rounded-full ${pathName === WEBSITE_FAQS && 'text-white hover:bg-black rounded-full bg-lime-600'}`} href={WEBSITE_FAQS}>FAQ's</Link>
-        <Link className={`py-1 px-5 hover:text-lime-600 transition-all duration-500  rounded-full ${pathName === WEBSITE_CONTACT && 'text-white hover:bg-black rounded-full bg-lime-600'}`} href={WEBSITE_CONTACT}>Contact</Link>
+        <Link className={`py-1 px-5 hover:text-lime-600 transition-all duration-500  rounded-full ${pathName === WEBSITE_HOME && 'text-lime-600 hover:bg-black rounded-full '}`} href={WEBSITE_HOME}>Home</Link>
+        <Link className={`py-1 px-5 hover:text-lime-600 transition-all duration-500  rounded-full ${pathName === WEBSITE_ABOUT && 'text-lime-600 hover:bg-black rounded-full '}`} href={WEBSITE_ABOUT}>About</Link>
+        <Link className={`py-1 px-5 hover:text-lime-600 transition-all duration-500  rounded-full ${pathName === WEBSITE_SERVICES && 'text-lime-600 hover:bg-black rounded-full'}`} href={WEBSITE_SERVICES}>Services</Link>
+        <Link className={`py-1 px-5 hover:text-lime-600 transition-all duration-500  rounded-full ${pathName === WEBSITE_PROJECTS && 'text-lime-600 hover:bg-black rounded-full '}`} href={WEBSITE_PROJECTS}>Projects</Link>
+        <Link className={`py-1 px-5 hover:text-lime-600 transition-all duration-500  rounded-full ${pathName === WEBSITE_FAQS && 'text-lime-600 hover:bg-black rounded-full '}`} href={WEBSITE_FAQS}>FAQ's</Link>
+        <Link className={`py-1 px-5 hover:text-lime-600 transition-all duration-500  rounded-full ${pathName === WEBSITE_CONTACT && 'text-lime-600 hover:bg-black rounded-full '}`} href={WEBSITE_CONTACT}>Contact</Link>
 
 
       </div>

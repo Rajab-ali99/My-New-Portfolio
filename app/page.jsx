@@ -19,6 +19,21 @@ import HerroSection from "@/components/HerroSection";
 import Link from "next/link";
 import { WEBSITE_SERVICES } from "@/routes/WebsiteRoutes";
 import Lines from "@/components/Lines";
+export const metadata = {
+  description:
+    "I'm Rajab Ali — Full Stack Developer (MERN & Next.js). Explore my projects, services, skills, and contact information.",
+  openGraph: {
+    title: "Rajab Ali — Full Stack Developer",
+    description:
+      "Professional MERN & Next.js developer building scalable, high-performance web applications.",
+    url: "https://rajabali.pk",
+    images: ["/og-home.png"],
+  },
+  alternates: {
+    canonical: "https://rajabali.pk",
+  },
+};
+
 export default function Home() {
   return (
     <div >
@@ -42,7 +57,7 @@ export default function Home() {
           <div className="w-full ">Full-Stack Development</div>
         </div>
 
-        <Image className="md:w-[80vw] z-10" quality={100} src={HeroImg.src} height={HeroImg.height} width={HeroImg.width} alt="Hero Image" />
+        <Image className="md:w-[80vw] z-10" quality={100} src={HeroImg.src} height={HeroImg.height} width={HeroImg.width} alt="Hero Developer Image" />
       </div>
 
       <div className=" hidden md:block relative left-[170px] -mt-[110px] bg-transparent z-40  rounded-4xl w-sm py-4 px-5 border border-slate-600">
@@ -50,7 +65,7 @@ export default function Home() {
         <div className="w-full h-[0.5px] bg-gray-700"></div>
         <div className="pt-3 flex items-center gap-5">
           <div className="h-[40px] w-[40px] rounded-full">
-            <Image className="h-full w-full rounded-full" src={icon.src} height={icon.height} width={icon.width} alt="icon" />
+            <Image className="h-full w-full rounded-full" src={icon.src} height={icon.height} width={icon.width} alt="Rajab icon" />
           </div>
           <div>
             <div className="flex items-center ">
@@ -61,7 +76,7 @@ export default function Home() {
               <IoStarSharp className="text-lime-600" />
 
             </div>
-            <div className="text-xl">10+    5 star Reviews</div>
+            <div className="text-xl">14 Days Free Support</div>
           </div>
         </div>
       </div>
@@ -72,7 +87,7 @@ export default function Home() {
           <span className="text-lime-600 md:text-xl font-semibold  px-3 py-1 rounded-full bg-[#1f1d1d]">Services</span>
           <div className="flex flex-col items-center justify-center gap-3">
 
-            <h2 className="font-bold text-3xl md:text-5xl">What we are <span className="text-lime-500">offering</span></h2>
+            <h2 className="font-bold text-3xl md:text-5xl">What I'm <span className="text-lime-500">offering</span></h2>
             <Lines />
           </div>
         </div>
@@ -182,7 +197,7 @@ export default function Home() {
             </div>
           </div>
 
-          <Image className="md:w-[100vw] h-[160vh] object-cover md:h-auto " quality={100} src={group.src} height={group.height} width={group.width} alt="Hero Image" />
+          <Image className="md:w-[100vw] h-[160vh] object-cover md:h-auto " quality={100} src={group.src} height={group.height} width={group.width} alt="Hero section Image" />
         </div>
         <div className="md:mx-10 md:h-[75vh] my-10 mx-4 flex flex-col md:flex-row gap-3 md:my-20">
 
@@ -201,7 +216,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className=" md:w-[30vw] min-h-[38vh] md:min-h-[75vh] p-5 justify-evenly  flex flex-col  mg:justify-between rounded-3xl bg-[#1f1d1d]">
+          <div className=" md:w-[30vw] min-h-[38vh] md:min-h-[75vh] p-5 justify-evenly md:justify-between flex flex-col  mg:justify-between rounded-3xl bg-[#1f1d1d]">
             <div className="flex flex-col md:flex-row items-center gap-3">
               <h2 className="text-lime-600 md:text-4xl text-2xl font-bold">24/7</h2>
               <p className="font-semibold  text-xl  text-center md:text-start  md:text-2xl">Uptime & Reliability</p>

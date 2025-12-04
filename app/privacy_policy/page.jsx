@@ -1,73 +1,103 @@
-import React from 'react'
+import Link from "next/link";
 
-const PrivacyPolicyPage = () => {
-    return (
-        <div className='md:mx-20 mt-30 md:text-lg text-sm  md:p-10 text-slate-500 p-5 mx-5 my-10 rounded-3xl  bg-[#1f1d1d]/60'>
-            <h1 className='md:text-5xl text-3xl text-center font-black text-emerald-500'>Bullish Pixel Privacy Policy</h1>
-            <p>Effective Date: Upon Publication</p>
-            <p>Website: bullishpixel.com</p>
-            <p>Email: hello@bullishpixel.com</p>
-            <p>Contact: +92 311 7787 395</p>
-            <p>Service Provider: Bullish Pixel</p>
-            <h2 className='md:text-4xl text-2xl mt-5 font-black text-gray-500'>1. Introduction</h2>
-            <p>Bullish Pixel is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website bullishpixel.com or engage our services, including Digital Marketing, Trading Education, AI Trading Strategies, Custom Website Development, Shopify & WordPress Design, and Global Business Formation.</p>
-            <p>By using our Site or Services, you consent to the data practices described in this policy.</p>
+export const metadata = {
+  title: "Privacy Policy",
+  description: "Privacy Policy for Rajab Ali - Full Stack Developer Portfolio.",
+  alternates: {
+    canonical: "https://rajabali.pk/privacy_policy",
+  },
+};
 
-            <h2 className='md:text-4xl text-2xl mt-2 font-black text-gray-500'>2. Information We Collect</h2>
-            <h3 className='md:text-2xl font-black text-xl text-emerald-500'>2.1. Personal Information You Provide</h3>
-            <p className='text-white'>We collect personal information that you voluntarily provide to us when you express interest in our services, contact us, or engage us for a project. This includes:</p>
-            <p><span className='text-white'>Contact Details:</span> Name, email address, phone number, company name, and physical address.</p>
-            <p><span className='text-white'>Project Information:</span> Business goals, project requirements, login credentials (for web development), and any materials you provide.</p>
-            <p><span className='text-white'>Financial Data:</span> Billing address, payment information (processed securely by our third-party payment processors), and transaction history.</p>
-            <p><span className='text-white'>Sensitive Information:</span> For business formation services (LLC, Ltd, Pvt Ltd), we may collect government-issued identification numbers, passport copies, and other legally required documents.</p>
-            <h3 className='md:text-2xl font-black text-xl text-emerald-500'>2.2. Information Collected Automatically</h3>
-            <p className='text-white'>When you visit our Site, we may automatically collect:</p>
-            <p><span className='text-white'>Usage Data:</span> IP address, browser type, operating system, referring URLs, pages visited, time spent on pages, and other diagnostic data.</p>
-            <p><span className='text-white'>Cookies and Tracking Technologies:</span> We use cookies and similar tracking technologies to track activity on our Site and hold certain information to enhance your experience.</p>
-            <h2 className='md:text-4xl text-2xl mt-2 font-black text-gray-500'>3. How We Use Your Information</h2>
-            <p className='text-white'>We use the information we collect for the following purposes:</p>
-            <p><span className='text-white'>To Provide and Manage Our Services:</span> To deliver our services, including website development, marketing campaigns, trading education, and company registration.</p>
-            <p><span className='text-white'>To Process Your Transactions:</span> To manage your orders, payments, and subscriptions.</p>
-            <p><span className='text-white'>To Communicate With You:</span> To respond to your inquiries, send you updates about your projects, and provide customer support.</p>
-            <p><span className='text-white'>For Marketing and Promotions:</span> To send you information about specials, new services, or changes to this policy, but only if you have given us explicit consent.</p>
-            <p><span className='text-white'>To Improve Our Site and Services:</span> To analyze how our services are used so we can improve their quality and functionality.</p>
-            <p><span className='text-white'>For Legal and Compliance Reasons:</span> To comply with applicable laws, regulations, and legal processes.</p>
+export default function PrivacyPolicy() {
+  const currentDate = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
 
-            <h2 className='md:text-4xl text-2xl mt-2 font-black text-gray-500'>4. How We Share Your Information
-            </h2>
-            <p className='text-white'>We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following limited circumstances:</p>
-            <p><span className='text-white'>With Trusted Service Providers:</span> We share information with third-party vendors who assist us in operations, such as payment processing, email delivery, hosting, and analytics. These partners are bound by contractual obligations to keep your information confidential.</p>
-            <p><span className='text-white'>For Business Formation:</span> To fulfill our LLC in USA, Ltd in UK, and Pvt Ltd in Pakistan services, we must share your provided documents with the relevant government authorities and legal intermediaries.</p>
-            <p><span className='text-white'>For Legal Reasons:</span> If required to do so by law or in response to valid legal requests by public authorities.</p>
-            <p><span className='text-white'>To Protect Our Rights:</span> To investigate potential violations of our Terms of Service, or to protect the rights, property, and safety of ourselves and others.</p>
+  return (
+    <main className="min-h-screen bg-[#0a0a0a] text-gray-300 pt-24 px-4 md:px-8">
+      <div className="max-w-3xl mx-auto space-y-8">
+        
+        {/* Header */}
+        <header className="border-b border-gray-800 pb-8">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            Privacy <span className="text-lime-600">Policy</span>
+          </h1>
+          <p className="text-gray-400">
+            Last Updated: {currentDate}
+          </p>
+        </header>
 
-            <h2 className='md:text-4xl text-2xl mt-2 font-black text-gray-500'>5. Data Security           </h2>
-            <p>We take the security of your data seriously. We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. Sensitive information (such as credit card data) is encrypted during transmission.</p>
-            <p>However, no method of transmission over the Internet or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.</p>
-            <h2 className='md:text-4xl text-2xl mt-2 font-black text-gray-500'>6. Your Data Protection Rights</h2>
-            <p className='text-white'>You have the right to:</p>
-            <p><span className='text-white'>Access and Correction:</span> Review and update the personal information we hold about you.</p>
-            <p><span className='text-white'>Deletion:</span> Request that we delete your personal information, subject to certain legal obligations.</p>
-            <p><span className='text-white'>Opt-Out of Marketing:</span> Unsubscribe from our marketing communications at any time by using the "unsubscribe" link in our emails or by contacting us directly.</p>
-            <p><span className='text-white'>Data Portability:</span> Request a copy of your data in a structured, machine-readable format.</p>
-            <p className='text-emerald-500 '>To exercise any of these rights, please contact us at <span className='text-blue-500'>hello@bullishpixel.com</span>.</p>
-            <h2 className='md:text-4xl text-2xl mt-2 font-black text-gray-500'>7. Cookies and Tracking Technologies</h2>
-            <p>Our Site uses "cookies" to enhance User experience. You can choose to set your web browser to refuse cookies or to alert you when cookies are being sent. If you do so, note that some parts of the Site may not function properly.</p>
-            <h2 className='md:text-4xl text-2xl mt-2 font-black text-gray-500'>8. Third-Party Links</h2>
-            <p>Our Site may contain links to other websites, such as Shopify, WordPress, or government registries. We are not responsible for the content or privacy practices of these external sites. We encourage you to review the privacy policies of any third-party sites you visit.</p>
-            <h2 className='md:text-4xl text-2xl mt-2 font-black text-gray-500'>9. Children's Privacy</h2>
-            <p>Our Services are not intended for individuals under the age of 18. We do not knowingly collect personal information from children under 18. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.</p>
-            <h2 className='md:text-4xl text-2xl mt-2 font-black text-gray-500'>10. Changes to This Privacy Policy</h2>
-            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes.</p>
-            <h2 className='md:text-4xl text-2xl mt-2 font-black text-gray-500'>11. Contact Us</h2>
-            <p className='text-white'>If you have any questions or concerns about this Privacy Policy, your data, or our practices, please contact us at:</p>
-            <p>Email: hello@bullishpixel.com</p>
-            <p>Phone: +92 311 7787395</p>
-            <p>Website: bullishpixel.com</p>
+        {/* Content */}
+        <div className="space-y-6 leading-relaxed">
+          <p>
+            At <strong>Rajab Ali&apos;s Portfolio</strong> (accessible from https://rajabali.pk), one of my main priorities is the privacy of my visitors and clients. This Privacy Policy document contains types of information that is collected and recorded by my website and how I use it.
+          </p>
 
+          <section>
+            <h2 className="text-2xl font-semibold text-lime-600 mb-3">1. Information I Collect</h2>
+            <p className="mb-2">
+              The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point I ask you to provide your personal information.
+            </p>
+            <ul className="list-disc pl-5 space-y-2 text-gray-400">
+              <li>
+                <strong>Client Inquiries:</strong> When you request a quote or contact me for development services, I may collect your name, email address, company name, phone number, and project details (budget, timeline, requirements).
+              </li>
+              <li>
+                <strong>Log Files:</strong> Like many other websites, I use log files. These files log visitors when they visit websites. The information collected by log files includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks.
+              </li>
+            </ul>
+          </section>
 
+          <section>
+            <h2 className="text-2xl font-semibold text-lime-600 mb-3">2. How I Use Your Information</h2>
+            <p>I use the information I collect in various ways, including to:</p>
+            <ul className="list-disc pl-5 space-y-2 mt-2 text-gray-400">
+              <li>Provide, operate, and maintain my website.</li>
+              <li>Respond to your service inquiries, project proposals, and freelance requests.</li>
+              <li>Communicate with you regarding project updates, timelines, and deliverables.</li>
+              <li>Understand and analyze how you use my website to improve my portfolio showcase.</li>
+              <li>Find and prevent fraud.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-lime-600 mb-3">3. Cookies and Web Beacons</h2>
+            <p>
+              Like any other website, Rajab Ali&apos;s Portfolio uses &apos;cookies&apos;. These cookies are used to store information including visitors&apos; preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users&apos; experience by customizing my web page content based on visitors&apos; browser type and/or other information.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-lime-600 mb-3">4. Third Party Privacy Policies</h2>
+            <p>
+              My Privacy Policy does not apply to other advertisers or websites. Thus, I am advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-lime-600 mb-3">5. Data Protection Rights (GDPR)</h2>
+            <p>
+              I would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:
+            </p>
+            <ul className="list-disc pl-5 space-y-2 mt-2 text-gray-400">
+              <li>The right to access – You have the right to request copies of your personal data.</li>
+              <li>The right to rectification – You have the right to request that I correct any information you believe is inaccurate.</li>
+              <li>The right to erasure – You have the right to request that I erase your personal data, under certain conditions.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-lime-600 mb-3">6. Contact Me</h2>
+            <p>
+              If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at <a href="mailto:contact@rajabali.pk" className="text-lime-600 hover:underline">contact@rajabali.pk</a>.
+            </p>
+          </section>
         </div>
-    )
+        
+        <div className="pt-8 border-t border-gray-800">
+           <Link href="/" className="text-sm text-lime-600 hover:text-lime-600 underline decoration-lime-600/30">
+              &larr; Back to Home
+           </Link>
+        </div>
+      </div>
+    </main>
+  );
 }
-
-export default PrivacyPolicyPage

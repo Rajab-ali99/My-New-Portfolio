@@ -4,6 +4,21 @@ import Faqs from '@/components/FAQS'
 import { WEBSITE_CONTACT } from '@/routes/WebsiteRoutes'
 import Link from 'next/link'
 import React from 'react'
+export const metadata = {
+  title: "FAQs",
+  description:
+    "Frequently asked questions about hiring Rajab Ali — project process, timelines, pricing, technologies, and support.",
+  openGraph: {
+    title: "FAQs — Rajab Ali",
+    description:
+      "Find answers to common questions about working with Rajab Ali as your full-stack developer.",
+    url: "https://rajabali.pk/faqs",
+    images: ["/og-faqs.png"],
+  },
+  alternates: {
+    canonical: "https://rajabali.pk/faqs",
+  },
+};
 
 const faqsPage = () => {
     return (

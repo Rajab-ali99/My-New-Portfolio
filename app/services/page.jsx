@@ -1,14 +1,24 @@
 import Service from '@/components/Service'
 import React from 'react'
-import { BsFillRocketFill } from 'react-icons/bs'
-import { PiUserFocus } from 'react-icons/pi'
-import { SiHiveBlockchain } from 'react-icons/si'
-import { GiSatelliteCommunication } from "react-icons/gi";
-import { MdSupportAgent } from "react-icons/md";
-import { SiRelianceindustrieslimited } from "react-icons/si";
+import { Rocket, Layers, Target, MessageSquareText, Headset, Cpu } from 'lucide-react';
 import ContactSection from '@/components/ContactForm'
 import Faqs from '@/components/FAQS'
 import Lines from '@/components/Lines'
+export const metadata = {
+  title: "Services",
+  description:
+    "Professional services by Rajab Ali: Full-stack development, MERN apps, API development, frontend, backend, deployment, debugging, and performance optimization.",
+  openGraph: {
+    title: "Services — Rajab Ali",
+    description:
+      "Explore full-stack development services including MERN, Next.js, APIs, frontend, backend, DevOps, and more.",
+    url: "https://rajabali.pk/services",
+    images: ["/og-services.png"],
+  },
+  alternates: {
+    canonical: "https://rajabali.pk/services",
+  },
+};
 
 
 const ServicesPage = () => {
@@ -32,46 +42,46 @@ const ServicesPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 ">
                 <div className="p-5 flex  rounded-xl flex-col gap-1 items-center bg-[#1f1d1d]/40 justify-center ">
                     <div className="p-2 rounded-md mb-4 bg-gray-900/40 border-lime-600 border">
-                        < BsFillRocketFill className="text-lime-600 text-4xl" />
+                        < Rocket className="text-lime-600 text-4xl" />
                     </div>
-                    <h3 className="text-xl md:text-2xl font-semibold">Proven Track Record</h3>
-                    <p className=" text-center text-gray-400">I deliver high-quality web applications that are fast, secure, and designed to drive real business growth, not just look good.</p>
+                    <h3 className="text-xl md:text-2xl font-semibold">Performance Focused</h3>
+                    <p className=" text-center  text-sm text-gray-400">I don't just build websites; I build high-performance digital assets. My code is optimized for speed, passing Core Web Vitals to ensure better Google rankings.</p>
                 </div>
                 <div className="p-5 flex rounded-xl flex-col gap-1 items-center bg-[#1f1d1d]/40 justify-center ">
                     <div className="p-2 rounded-md mb-4 bg-gray-900/40 border-lime-600 border">
-                        < SiHiveBlockchain className="text-lime-600 text-4xl" />
+                        < Layers className="text-lime-600 text-4xl" />
                     </div>
                     <h3 className="text-xl md:text-2xl font-semibold">Tailored Solutions</h3>
-                    <p className=" text-center text-gray-400">No cookie-cutter templates. I build custom, scalable architectures using Next.js that fit your specific goals and brand identity.</p>
+                    <p className=" text-center text-sm text-gray-400">No cookie-cutter templates. I build custom architectures using Next.js that are specifically designed to fit your unique brand identity and business goals.</p>
                 </div>
                 <div className="p-5 flex rounded-xl flex-col gap-1 items-center bg-[#1f1d1d]/40 justify-center ">
                     <div className="p-2 rounded-md mb-4 bg-gray-900/40 border-lime-600 border">
-                        < PiUserFocus className="text-lime-600 text-4xl" />
+                        < Target className="text-lime-600 text-4xl" />
                     </div>
                     <h3 className="text-xl md:text-2xl font-semibold">Client-Centric Focus</h3>
-                    <p className=" text-center text-gray-400">I don't just write code; I solve business problems. My goal is to understand your vision and translate it into a digital reality.</p>
+                    <p className=" text-center text-sm text-gray-400">I prioritize your vision. I bridge the gap between complex code and your business needs, ensuring the final product solves the right problems.</p>
                 </div>
 
                 <div className="p-5 flex rounded-xl flex-col gap-1 items-center bg-[#1f1d1d]/40 justify-center ">
                     <div className="p-2 rounded-md mb-4 bg-gray-900/40 border-lime-600 border">
-                        < GiSatelliteCommunication className="text-lime-600 text-4xl" />
+                        < MessageSquareText className="text-lime-600 text-4xl" />
                     </div>
                     <h3 className="text-xl md:text-2xl font-semibold">Transparent Communication</h3>
-                    <p className=" text-center text-gray-400">No tech jargon or ghosting. I believe in clear, honest updates so you always know exactly where your project stands.</p>
+                    <p className=" text-center text-sm text-gray-400">No ghosting or tech jargon. I provide clear, daily updates so you always know exactly where your project stands, from start to finish.</p>
                 </div>
                 <div className="p-5 flex rounded-xl flex-col gap-1 items-center bg-[#1f1d1d]/40 justify-center ">
                     <div className="p-2 rounded-md mb-4 bg-gray-900/40 border-lime-600 border">
-                        < MdSupportAgent className="text-lime-600 text-4xl" />
+                        < Headset className="text-lime-600 text-4xl" />
                     </div>
-                    <h3 className="text-xl md:text-2xl font-semibold">Dedicated Support</h3>
-                    <p className=" text-center text-gray-400">The relationship doesn't end at deployment. I provide reliable post-launch support to ensure your site remains optimized and bug-free.</p>
+                    <h3 className="text-xl md:text-2xl font-semibold">Long-Term Support</h3>
+                    <p className=" text-center text-sm text-gray-400">The relationship doesn't end at deployment. I offer free bug fixes for 14 days after launch to ensure your site runs perfectly.</p>
                 </div>
                 <div className="p-5 flex rounded-xl flex-col gap-1 items-center bg-[#1f1d1d]/40 justify-center ">
                     <div className="p-2 rounded-md mb-4 bg-gray-900/40 border-lime-600 border">
-                        < SiRelianceindustrieslimited className="text-lime-600 text-4xl" />
+                        < Cpu className="text-lime-600 text-4xl" />
                     </div>
-                    <h3 className="text-xl md:text-2xl font-semibold">Expertise Across Industries</h3>
-                    <p className=" text-center text-gray-400">From E-commerce to SaaS, I bring extensive technical experience working with diverse business models and industries.</p>
+                    <h3 className="text-xl md:text-2xl font-semibold">Modern Tech Stack</h3>
+                    <p className=" text-center text-sm text-gray-400">Specialized in the MERN Stack and Next.js. I use the latest technologies to build scalable, secure applications that are ready for the future.</p>
                 </div>
             </div>
             <div className="md:py-20 py-10">
