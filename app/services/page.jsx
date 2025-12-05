@@ -13,7 +13,7 @@ export const metadata = {
     description:
       "Explore full-stack development services including MERN, Next.js, APIs, frontend, backend, DevOps, and more.",
     url: "https://rajabali.pk/services",
-    images: ["/og-services.png"],
+    images: ["/og-default.png"],
   },
   alternates: {
     canonical: "https://rajabali.pk/services",

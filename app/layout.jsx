@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
+import { ToastContainer } from "react-toastify";
 
 export const metadata = {
   metadataBase: new URL("https://rajabali.pk"),
@@ -46,8 +47,8 @@ export default function RootLayout({ children }) {
   "url": "https://rajabali.pk",
   "image": "https://rajabali.pk/og-default.png",
   "sameAs": [
-    "https://www.linkedin.com/in/your-profile",
-    "https://github.com/your-github"
+    "https://www.linkedin.com/in/rajab-ali-636524375",
+    "https://github.com/Rajab-ali99"
   ],
   "knowsAbout": [
     "MERN Stack",
@@ -75,12 +76,13 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="antialiased">
+         <ToastContainer />
         <Navbar />
         {children}
 
-        <Link href='https://wa.me/923117787395'>
+        <Link href='https://wa.me/923093060947' target='_blank' rel='noopener noreferrer'>
           <Image
-            className="w-10 fixed z-40 bottom-4 md:bottom-10 right-4"
+            className="w-10 fixed z-40 bottom-8 md:bottom-8 right-7"
             src={whtsp.src}
             height={whtsp.height}
             width={whtsp.width}

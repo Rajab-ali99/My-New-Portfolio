@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { ExternalLink, Github, Layers, Zap } from 'lucide-react';
+import Lines from '@/components/Lines';
 
 const ProjectsContent =()=> {
   
@@ -13,8 +14,8 @@ const ProjectsContent =()=> {
       description: "A comprehensive e-commerce solution featuring a powerful admin dashboard for real-time inventory management. Built with the MERN stack (MongoDB, Express, React, Node.js) to ensure scalable performance, secure user authentication, and a seamless checkout process.",
       image: "/assets/projects/proc1.png", 
       techStack: ["React", "Node.js", "Express", "MongoDB", "Redux", "Tailwind CSS"],
-      demoLink: "#",
-      repoLink: "#",
+      demoLink: "https://full-stack-ecommerce-app-frontend.onrender.com",
+      repoLink: "https://github.com/Rajab-ali99/Full-Stack-Ecommerce-App",
     },
     {
       title: "Modern Portfolio v2",
@@ -22,8 +23,8 @@ const ProjectsContent =()=> {
       description: "A cutting-edge personal portfolio built with Next.js 15. Features server-side rendering for maximum SEO, smooth animations, and a custom backend integration using Nodemailer for secure, direct email communication.",
       image: "/assets/projects/proc2.png",
       techStack: ["Next.js 15", "Nodemailer", "Tailwind CSS", "Framer Motion"],
-      demoLink: "#",
-      repoLink: "#",
+      demoLink: "https://rajabali.pk",
+      repoLink: "https://github.com/Rajab-ali99/My-New-Portfolio",
     },
     {
       title: "Bullish Pixel Services Hub",
@@ -31,8 +32,8 @@ const ProjectsContent =()=> {
       description: "A high-performance digital services hub designed for Bullish Pixel. Built with Next.js 15 for superior SEO and speed, it features smooth animations via Framer Motion, accessible UI components from Shadcn, and a secure backend contact system powered by Nodemailer.",
       image: "/assets/projects/proc3.png",
       techStack: ["Next.js 15", "Nodemailer", "Tailwind CSS", "Framer Motion", "Shadcn UI"],
-      demoLink: "#",
-      repoLink: "#",
+      demoLink: "https://bullishpixel.com",
+      repoLink: "https://github.com/Rajab-ali99/Agency",
     },
     {
       title: "Alpha Group Industrial",
@@ -40,8 +41,8 @@ const ProjectsContent =()=> {
       description: "A professional corporate website developed for Alpha Group, a leading industrial services provider in Jeddah, Saudi Arabia. The site features a clean, responsive design tailored to showcase their industrial portfolio and services to an international audience.",
       image: "/assets/projects/proc4.png",
       techStack: ["React", "Tailwind CSS", "Vite", "REST API", "Responsive Design"],
-      demoLink: "#",
-      repoLink: "#",
+      demoLink: "https://mariene.vercel.app",
+      repoLink: "https://github.com/MalikSb393/Mariene",
     },
     {
         title: "Convo Real-Time Chat",
@@ -49,8 +50,8 @@ const ProjectsContent =()=> {
         description: "A seamless real-time messaging platform built on the MERN stack. Features secure user authentication, instant end-to-end messaging powered by Socket.io, global state management with Redux, and dynamic user search functionality.",
         image: "/assets/projects/proc5.png",
         techStack:["React", "Node.js", "Express", "MongoDB", "Socket.io", "Redux"],
-        demoLink: "#",
-        repoLink: "#",
+        demoLink: "https://mern-chat-app-frontend-xnjp.onrender.com",
+        repoLink: "https://github.com/Rajab-ali99/Mern-Chat-App",
     },
     {
         title: "Tomato Food Delivery",
@@ -58,8 +59,8 @@ const ProjectsContent =()=> {
         description: "A high-performance food delivery interface built with React and Vite for lightning-fast loading. Includes dynamic product listings, a persistent 'Add to Cart' system managed by Redux, and a fully responsive UI styled with Tailwind CSS.",
         image: "/assets/projects/proc6.png",
         techStack: ["React", "Vite", "Redux", "Tailwind CSS"],
-        demoLink: "#",
-        repoLink: "#",
+        demoLink: "https://food-delivery-blond-eta.vercel.app",
+        repoLink: "https://github.com/Rajab-ali99/Food-Delivery",
     },
     {
         title: "Creative Portfolio v1",
@@ -67,8 +68,8 @@ const ProjectsContent =()=> {
         description: "My initial personal website showcasing creative frontend development. Built with React and Vite for optimal performance, it features engaging interactive animations using Framer Motion and LottieFiles to create an immersive user experience.",
         image: "/assets/projects/proc7.png",
         techStack: ["React", "Vite", "Tailwind CSS", "Framer Motion", "LottieFiles"],
-        demoLink: "#",
-        repoLink: "#",
+        demoLink: "https://portfolio-e4q6.onrender.com/",
+        repoLink: "https://github.com/Rajab-ali99/Portfolio",
     },
     {
         title: "Modern Business Landing Page",
@@ -76,8 +77,8 @@ const ProjectsContent =()=> {
         description: "A pixel-perfect, high-converting landing page designed to demonstrate responsive UI development. Built with React and Tailwind CSS, it features a clean modern layout, optimized assets, and a mobile-first architecture.",
         image: "/assets/projects/proc8.png",
         techStack: ["React", "Vite", "Tailwind CSS", "HTML5", "CSS3"],
-        demoLink: "#",
-        repoLink: "#",
+        demoLink: "https://landing-page-five-psi-55.vercel.app/",
+        repoLink: "https://github.com/Rajab-ali99/Landing-page",
     },
   ];
 
@@ -92,7 +93,7 @@ const ProjectsContent =()=> {
              <div className="flex flex-col items-center justify-center gap-3">
                  <h2 className="font-bold text-3xl md:text-5xl">Recent <span className="text-lime-500">Projects</span></h2>
                  {/* Replaced <Lines /> with CSS to prevent crash */}
-                 <div className="h-1 w-24 bg-lime-600 rounded-full mt-2"></div>
+                 <Lines/>
              </div>
           </div>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto mt-6">

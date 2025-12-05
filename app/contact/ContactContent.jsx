@@ -13,7 +13,8 @@ import {
     Clock,
 } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
-
+import { TbBrandFiverr } from "react-icons/tb";
+import { SiUpwork } from "react-icons/si";
 
 const ContactContent=()=> {
     return (
@@ -63,32 +64,32 @@ const ContactContent=()=> {
                     <div className="bg-[#111]/40 rounded-3xl p-6 border border-white/10">
                         <div className="flex items-center gap-3 mb-4">
                             <Clock className="text-lime-600 w-6 h-6" />
-                            <h3 className="md:text-lg font-semibold">Follow Us:</h3>
+                            <h3 className="md:text-lg font-semibold">Follow me:</h3>
                         </div>
-                        <div className="flex items-center gap-4">
+                        <div className="flex justify-between items-center gap-4">
                             <a
-                                target="_blank" href="http://facebook.com/BullishPixel"
+                                target="_blank" href="https://www.upwork.com/freelancers/~01bf3c34879bc12ce2"
                                 className="p-2 rounded-full border border-white/10 hover:bg-lime-600 transition"
                             >
-                                <Facebook className="w-6 h-6" />
+                                <SiUpwork className="w-6 h-6" />
                             </a>
                             <a
-                                target="_blank" href="http://x.com/BullishPixel"
+                                target="_blank" href="https://github.com/Rajab-ali99"
                                 className="p-2 rounded-full border border-white/10 hover:bg-lime-600 transition"
                             >
                                 <FaGithub className="w-6 h-6" />
                             </a>
                             <a
-                                target="_blank" href="http://linkedin.com/in/bullishpixel"
+                                target="_blank" href="https://www.linkedin.com/in/rajab-ali-636524375"
                                 className="p-2 rounded-full border border-white/10 hover:bg-lime-600 transition"
                             >
                                 <Linkedin className="w-6 h-6" />
                             </a>
                             <a
-                                target="_blank" href="http://instagram.com/bullishpixel"
+                                target="_blank" href="https://www.fiverr.com/rajabali10005"
                                 className="p-2 rounded-full border border-white/10 hover:bg-lime-600 transition"
                             >
-                                <Instagram className="w-6 h-6" />
+                                <TbBrandFiverr className="w-6 h-6" />
                             </a>
                         </div>
                     </div>

@@ -27,7 +27,7 @@ export const metadata = {
     description:
       "Professional MERN & Next.js developer building scalable, high-performance web applications.",
     url: "https://rajabali.pk",
-    images: ["/og-home.png"],
+    images: ["/og-default.png"],
   },
   alternates: {
     canonical: "https://rajabali.pk",

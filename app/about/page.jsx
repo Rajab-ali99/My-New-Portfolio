@@ -9,7 +9,7 @@ export const metadata = {
     description:
       "Full-stack developer specializing in MERN & Next.js. Discover my background, skills, and experience.",
     url: "https://rajabali.pk/about",
-    images: ["/og-about.png"],
+    images: ["/og-default.png"],
   },
   alternates: {
     canonical: "https://rajabali.pk/about",

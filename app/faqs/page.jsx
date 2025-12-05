@@ -13,7 +13,7 @@ export const metadata = {
     description:
       "Find answers to common questions about working with Rajab Ali as your full-stack developer.",
     url: "https://rajabali.pk/faqs",
-    images: ["/og-faqs.png"],
+    images: ["/og-default.png"],
   },
   alternates: {
     canonical: "https://rajabali.pk/faqs",

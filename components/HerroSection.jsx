@@ -122,6 +122,7 @@ export default function HeroSection() {
                                 <div className="h-[100%] w-[100%] relative">
                                     <Image
                                         src={middleRingImages[i % middleRingImages.length]}
+                                        priority={true}
                                         alt={`icons-middle-ring-${i}`}
                                         fill
                                         className="object-contain"
@@ -157,6 +158,7 @@ export default function HeroSection() {
                                 <div className="h-[100%] w-[100%] relative">
                                     <Image
                                         src={innerRingImages[i % innerRingImages.length]}
+                                        priority={true}
                                         alt={`icons-inner-ring-${i}`}
                                         fill
                                         className="object-contain"

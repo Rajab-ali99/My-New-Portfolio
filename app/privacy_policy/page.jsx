@@ -87,7 +87,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-2xl font-semibold text-lime-600 mb-3">6. Contact Me</h2>
             <p>
-              If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at <a href="mailto:contact@rajabali.pk" className="text-lime-600 hover:underline">contact@rajabali.pk</a>.
+              If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at <a href="mailto:developer@rajabali.com" className="text-lime-600 hover:underline">developer@rajabali.com</a>.
             </p>
           </section>
         </div>

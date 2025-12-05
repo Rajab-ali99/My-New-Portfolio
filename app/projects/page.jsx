@@ -11,7 +11,7 @@ export const metadata = {
     description:
       "Explore real portfolio projects built with MERN, Next.js, React, and Node.js.",
     url: "https://rajabali.pk/projects",
-    images: ["/og-projects.png"],
+    images: ["/og-default.png"],
   },
   alternates: {
     canonical: "https://rajabali.pk/projects",

@@ -10,7 +10,7 @@ export const metadata = {
     description:
       "Reach out to discuss your project — MERN, Next.js, React, Node.js and more.",
     url: "https://rajabali.pk/contact",
-    images: ["/og-contact.png"],
+    images: ["/og-default.png"],
   },
   alternates: {
     canonical: "https://rajabali.pk/contact",

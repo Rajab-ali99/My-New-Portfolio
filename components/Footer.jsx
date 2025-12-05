@@ -28,7 +28,7 @@ export default function Footer() {
                 <div className="bg-[#151515]/50 border border-white/10 rounded-3xl p-6 flex items-center gap-4 shadow-inner">
                     <Phone className="text-lime-600 w-6 h-6" />
                     <div className="flex items-center gap-3">
-                        <p className="text-gray-400  md:text-lg font-semibold ">Call Us</p>
+                        <p className="text-gray-400  md:text-lg font-semibold ">Call me</p>
                         <p className="font-medium text-xs md:text-sm">+92 309 3060 947 </p>
                     </div>
                 </div>
@@ -114,19 +114,19 @@ export default function Footer() {
             {/* Social + Newsletter */}
             <div className="mt-12 border-t border-white/10 pt-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
                 {/* Social Icons */}
-                <div className="flex items-center gap-4">
-                    <span className="text-gray-400 md:text-base text-xs font-semibold ">Follow us:</span>
-                    <div className="flex md:gap-3 gap-1">
-                        <a target="_blank" href="http://tiktok.com/@bullishpixel" className="bg-[#151515] p-2 rounded-xl hover:text-lime-600 transition">
+                <div className="flex  items-center gap-4">
+                    <span className="text-gray-400 md:text-base text-xs font-semibold ">Follow me:</span>
+                    <div className="flex gap-5 ">
+                        <a target="_blank" href="https://www.upwork.com/freelancers/~01bf3c34879bc12ce2" className="bg-[#151515] p-2 rounded-xl hover:text-lime-600 transition">
                             <SiUpwork className="w-6 h-6" />
                         </a>
-                        <a target="_blank" href="http://linkedin.com/in/bullishpixel" className="bg-[#151515] p-2 rounded-xl hover:text-lime-600 transition">
+                        <a target="_blank" href="https://www.linkedin.com/in/rajab-ali-636524375" className="bg-[#151515] p-2 rounded-xl hover:text-lime-600 transition">
                             <Linkedin className="w-6 h-6" />
                         </a>
-                        <a target="_blank" href="http://instagram.com/bullishpixel" className="bg-[#151515] p-2 rounded-xl hover:text-lime-600 transition">
+                        <a target="_blank" href="https://www.fiverr.com/rajabali10005" className="bg-[#151515] p-2 rounded-xl hover:text-lime-600 transition">
                             <TbBrandFiverr className="w-6 h-6" />
                         </a>
-                        <a target="_blank" href="http://x.com/BullishPixel" className="bg-[#151515] p-2 rounded-xl hover:text-lime-600 transition">
+                        <a target="_blank" href="https://github.com/Rajab-ali99" className="bg-[#151515] p-2 rounded-xl hover:text-lime-600 transition">
                             <FaGithub className="w-6 h-6" />
                         </a>
                     </div>

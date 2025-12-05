@@ -152,7 +152,7 @@ const AboutContent = () => {
                 <div className="md:mx-20 flex py-10 flex-col md:flex-row gap-10">
                     <div className="md:w-1/2 relative  flex justify-center">
 
-                        <Image className="bg-transparent object-contain z-20  w-[80%] rounded-t-full " src={rjb.src} height={rjb.height} width={rjb.width} alt="Rajab Ali Full stack Developer" />
+                        <Image className="bg-transparent object-contain z-20  w-[80%] rounded-t-full " src={rjb.src} priority={true} height={rjb.height} width={rjb.width} alt="Rajab Ali Full stack Developer" />
                         <div className="absolute top-1/2 -translate-y-1/2 w-72 h-72 rounded-full bg-lime-600/80 blur-3xl z-10" />
 
 
@@ -219,7 +219,7 @@ const AboutContent = () => {
 
             </section>
             <div className="flex justify-center py-20 items-center flex-col ">
-                <span className="text-lime-600 text-sm font-semibold px-3 mb-3 py-1 rounded-full bg-[#121212]">How We Work</span>
+                <span className="text-lime-600 text-sm font-semibold px-3 mb-3 py-1 rounded-full bg-[#121212]">How I Work</span>
                 <div className="flex flex-col items-center justify-center gap-4">
 
                     <h2 className="text-3xl md:text-5xl font-bold text-center text-white ">
