@@ -38,12 +38,12 @@ const Sidebar = ({ open, onClose }) => {
 
         {/* Menu Links */}
         <ul className="flex flex-col p-4 w-[80vw] space-y-4">
-          <Link   onClick={onClose}  href={WEBSITE_HOME} className="text-lime-600 text-xl py-1 px-3 rounded-xl flex items-center gap-3"><span className='text-3xl'><HiHome/></span>Home</Link>
-          <Link  onClick={onClose} href={WEBSITE_ABOUT} className="text-lime-600 text-xl py-1 px-3 rounded-xl flex items-center gap-3"><span className='text-3xl'><HiUser/></span>About</Link>
-          <Link  onClick={onClose} href={WEBSITE_SERVICES} className="text-lime-600 text-xl py-1 px-3 rounded-xl flex items-center gap-3"><span className='text-3xl'><HiBadgeCheck/></span>Services</Link>
-          <Link onClick={onClose} href={WEBSITE_PROJECTS} className="text-lime-600 text-xl py-1 px-3 rounded-xl flex items-center gap-3"><span className='text-3xl'><HiFolder/></span>Projects</Link>
-          <Link onClick={onClose} href={WEBSITE_FAQS} className="text-lime-600 text-xl py-1 px-3 rounded-xl flex items-center gap-3"><span className='text-3xl'><HiChatAlt2/></span>FAQ's</Link>
-          <Link onClick={onClose} href={WEBSITE_CONTACT} className="text-lime-600 text-xl py-1 px-3 rounded-xl flex items-center gap-3"><span className='text-3xl'><HiMail/></span>Contact</Link>
+          <Link   onClick={onClose}  href={WEBSITE_HOME} className="text-lime-600  py-1 px-3 rounded-xl flex items-center gap-3"><span className='text-3xl'><HiHome/></span>Home</Link>
+          <Link  onClick={onClose} href={WEBSITE_ABOUT} className="text-lime-600  py-1 px-3 rounded-xl flex items-center gap-3"><span className='text-3xl'><HiUser/></span>About</Link>
+          <Link  onClick={onClose} href={WEBSITE_SERVICES} className="text-lime-600  py-1 px-3 rounded-xl flex items-center gap-3"><span className='text-3xl'><HiBadgeCheck/></span>Services</Link>
+          <Link onClick={onClose} href={WEBSITE_PROJECTS} className="text-lime-600  py-1 px-3 rounded-xl flex items-center gap-3"><span className='text-3xl'><HiFolder/></span>Projects</Link>
+          <Link onClick={onClose} href={WEBSITE_FAQS} className="text-lime-600  py-1 px-3 rounded-xl flex items-center gap-3"><span className='text-3xl'><HiChatAlt2/></span>FAQ's</Link>
+          <Link onClick={onClose} href={WEBSITE_CONTACT} className="text-lime-600  py-1 px-3 rounded-xl flex items-center gap-3"><span className='text-3xl'><HiMail/></span>Contact</Link>
         </ul>
 
         {/* Quote Button */}
