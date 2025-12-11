@@ -179,14 +179,14 @@ export default function HeroSection() {
                     transition={{ delay: 0.3, duration: 0.5, ease: "easeOut" }}
                     className="text-3xl md:text-5xl font-bold text-white mb-4"
                 >
-                   Fast. Secure. Scalable & Modern.
+                   Rajab Ali — Full Stack Developer
                 </motion.h1>
 
                 <motion.p
                     initial={{ opacity: 0, y: 15 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5, duration: 0.4, ease: "easeOut" }}
-                    className="text-gray-300 text-sm md:text-lg mb-6"
+                    className="text-gray-300 text-xs md:text-lg mb-6"
                 >
                    Full-Stack Solutions—With Precision, Passion, and Purpose!
                 </motion.p>
