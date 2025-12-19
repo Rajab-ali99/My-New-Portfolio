@@ -57,7 +57,7 @@ export default function Home() {
           <div className="w-full ">Full-Stack Development</div>
         </div>
 
-        <Image className="md:w-[80vw] z-10" quality={100} src={HeroImg.src} height={HeroImg.height} width={HeroImg.width} alt="Hero Developer Image" />
+        <Image className="md:w-[70vw] z-10" quality={100} src={HeroImg.src} height={HeroImg.height} width={HeroImg.width} alt="Hero Developer Image" />
       </div>
 
       <div className=" hidden md:block relative left-[170px] -mt-[110px] bg-transparent z-40  rounded-4xl w-sm py-4 px-5 border border-slate-600">
