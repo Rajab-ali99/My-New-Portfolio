@@ -16,6 +16,13 @@ export const metadata = {
     "Portfolio of Rajab Ali — Full Stack Developer specializing in MERN, Next.js, React, Node.js and scalable web applications.",
   keywords: [
     "Rajab Ali",
+    "Rajab",
+    "Rajab ali portfolio",
+    "Rajab Developer",
+    "Rajab Ali Developer",
+    "Rajab A",
+    "Rajab ali",
+    "rajab",
     "Full Stack Developer",
     "MERN Developer",
     "Next.js Developer",
