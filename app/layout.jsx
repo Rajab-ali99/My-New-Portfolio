@@ -30,6 +30,9 @@ export const metadata = {
     "Node.js Developer",
     "Web Developer Pakistan",
   ],
+  icons:{
+    icon: '/favicon.png',
+  },
   openGraph: {
     type: "website",
     locale: "en_PK",
