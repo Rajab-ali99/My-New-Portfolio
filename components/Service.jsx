@@ -24,7 +24,7 @@ const services = [
         description:
             "Your idea deserves a complete, scalable solution. I build full-stack applications using the MERN stack and Next.js — from clean UI to powerful backend systems. Every feature is designed to be fast, secure, and production-ready. Stop struggling with half-built systems. Get a full solution that works end-to-end.",
         mail: "For queries:",
-        inner: 'developer@rajabali.com',
+        inner: 'rajabaliofficial10005@gmail.com',
         details: [
 
             {
@@ -118,7 +118,7 @@ const services = [
         description:
             "Your app needs more than a database — it needs communication. I create secure, well-structured REST APIs and integrate third-party services like payment gateways, social logins, and CRMs. No broken endpoints. No slow responses. Just reliable APIs built for real-world traffic.",
         mail: "For queries: ",
-        inner: 'developer@rajabali.com',
+        inner: 'rajabaliofficial10005@gmail.com',
         details: [
             {
                 type: "paragraph",
@@ -205,7 +205,7 @@ const services = [
         description:
             "A great product starts with a great interface. I develop modern, responsive, and pixel-perfect UIs using React, Next.js, and Tailwind. Smooth interactions, fast load times, and a design system that feels premium — that’s the standard.",
         mail: "For queries: ",
-        inner: 'developer@rajabali.com',
+        inner: 'rajabaliofficial10005@gmail.com',
         details: [
             {
                 type: "paragraph",
@@ -292,7 +292,7 @@ const services = [
         description:
             "Your backend is the brain of your application. I build scalable architectures, secure authentication, efficient APIs, and databases optimized for performance. Whether it’s a simple server or a complex multi-module system — the backend is built to last.",
         mail: "For queries: ",
-        inner: 'developer@rajabali.com',
+        inner: 'rajabaliofficial10005@gmail.com',
         details: [
             {
                 type: "paragraph",
@@ -379,7 +379,7 @@ const services = [
         description:
             "Your app isn’t finished until it’s live. I handle deployment on Vercel, Render, DigitalOcean, and cloud servers. From environment variables to SSL, domains, routing, and CI/CD — everything is configured professionally for smooth production launches.",
         mail: "For queries:",
-        inner: 'developer@rajabali.com',
+        inner: 'rajabaliofficial10005@gmail.com',
         details: [
             {
                 type: "paragraph",
@@ -461,7 +461,7 @@ const services = [
         description:
             "Errors slow you down — I fix them. From broken components to server crashes, UI glitches, and logic issues, I trace problems to their source and solve them cleanly. Clean fixes. Better stability. Zero headaches.",
         mail: "For queries: ",
-        inner: 'developer@rajabali.com',
+        inner: 'rajabaliofficial10005@gmail.com',
         details: [
             {
                 type: "paragraph",
@@ -544,7 +544,7 @@ const services = [
             "A slow website loses users instantly. I optimize loading speed, improve Lighthouse scores, fix layout shifts, compress assets, and enhance backend performance. Your site becomes faster, smoother, and ready to handle real traffic.",
         mail: "For queries:"
         ,
-        inner: 'developer@rajabali.com',
+        inner: 'rajabaliofficial10005@gmail.com',
         details: [
             {
                 type: "paragraph",

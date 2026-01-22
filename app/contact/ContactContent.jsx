@@ -56,7 +56,7 @@ const ContactContent=()=> {
                             <h3 className="md:text-lg font-semibold">Email:</h3>
                         </div>
                         <p className="text-sm md:text-base font-medium text-white/50 ">
-                            developer@rajabali.com
+                            rajabaliofficial10005@gmail.com
                         </p>
                     </div>
 

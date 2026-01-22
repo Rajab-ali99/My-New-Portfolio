@@ -20,7 +20,7 @@ export default function Footer() {
                     <Mail className="text-lime-600 w-6 h-6" />
                     <div className="flex items-center gap-3">
                         <p className="text-gray-400  font-semibold md:text-lg">Email</p>
-                        <p className="font-medium text-xs md:text-sm">developer@rajabali.com</p>
+                        <p className="font-medium text-xs md:text-sm">rajabaliofficial10005@gmail.com</p>
                     </div>
                 </div>
 
