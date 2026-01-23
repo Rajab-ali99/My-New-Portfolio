@@ -16,27 +16,27 @@ export default function Footer() {
             {/* Contact boxes */}
             <div className="grid md:grid-cols-3 bg-slate-500/10 p-5 rounded-2xl gap-6 mb-12">
                 {/* Email */}
-                <div className="bg-[#151515]/50 border border-white/20 rounded-3xl p-6 flex items-center gap-4 shadow-inner">
-                    <Mail className="text-lime-600 w-6 h-6" />
-                    <div className="flex items-center gap-3">
+                <div className="bg-[#151515]/50 border border-white/20 md:rounded-3xl rounded-2xl p-4 md:p-6 flex items-center gap-2 shadow-inner">
+                    <Mail className="text-lime-600 hidden md:block w-6 h-6" />
+                    <div className="flex items-center gap-2">
                         <p className="text-gray-400  font-semibold md:text-lg">Email</p>
                         <p className="font-medium text-xs md:text-sm">rajabaliofficial10005@gmail.com</p>
                     </div>
                 </div>
 
                 {/* Phone */}
-                <div className="bg-[#151515]/50 border border-white/10 rounded-3xl p-6 flex items-center gap-4 shadow-inner">
-                    <Phone className="text-lime-600 w-6 h-6" />
-                    <div className="flex items-center gap-3">
+                <div className="bg-[#151515]/50 border border-white/10 md:rounded-3xl rounded-2xl p-4 md:p-6 flex items-center gap-2 shadow-inner">
+                    <Phone className="text-lime-600 hidden md:block w-6 h-6" />
+                    <div className="flex items-center gap-2">
                         <p className="text-gray-400  md:text-lg font-semibold ">Call me</p>
                         <p className="font-medium text-xs md:text-sm">+92 309 3060 947 </p>
                     </div>
                 </div>
 
                 {/* Location */}
-                <div className="bg-[#151515]/50 border border-white/10 rounded-3xl p-6 flex items-center gap-4 shadow-inner">
-                    <MapPin className="text-lime-600 w-6 h-6" />
-                    <div className="flex items-center gap-3">
+                <div className="bg-[#151515]/50 border border-white/10 md:rounded-3xl rounded-2xl p-4 md:p-6 flex items-center gap-2 shadow-inner">
+                    <MapPin className="text-lime-600 hidden md:block w-6 h-6" />
+                    <div className="flex items-center gap-2">
                         <p className="text-gray-400 font-semibold  md:text-lg">Location</p>
                         <p className="font-medium text-xs md:text-sm">Faisalabad, Pakistan</p>
                     </div>
