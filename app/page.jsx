@@ -2,7 +2,7 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import HeroImg from '@/public/assets/home/hero.webp'
-import icon from '@/public/assets/icon.jpeg'
+import icon from '@/public/assets/icon.png'
 import { IoStarSharp } from "react-icons/io5";
 import Button from "@/components/Button";
 import group from '@/public/assets/home/grp.jpg'
@@ -205,7 +205,7 @@ export default function Home() {
 
             <Image className="rounded-3xl hidden md:block opacity-30" src={dev.src} height={dev.height} width={dev.width} alt="developer img" />
             <Image className="rounded-3xl  md:hidden opacity-30" src={devM.src} height={devM.height} width={devM.width} alt="developer img" />
-            <div className="absolute bottom-0 p-5 md:p-10 left-0">
+            <div className="absolute bottom-15 p-5 md:p-10 left-0">
               <div className="flex flex-col md:flex-row items-center gap-3">
 
                 <h2 className="font-bold md:ps-20 text-lime-600 text-5xl">100%</h2>
@@ -216,7 +216,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className=" md:w-[30vw] min-h-[38vh] md:min-h-[75vh] p-5 justify-evenly md:justify-between flex flex-col  mg:justify-between rounded-3xl bg-[#1f1d1d]">
+          <div className=" md:w-[30vw] min-h-[38vh] md:h-[477px] p-5 justify-evenly md:justify-between flex flex-col  mg:justify-between rounded-3xl bg-[#1f1d1d]">
             <div className="flex flex-col md:flex-row items-center gap-3">
               <h2 className="text-lime-600 md:text-4xl text-2xl font-bold">24/7</h2>
               <p className="font-semibold  text-xl  text-center md:text-start  md:text-2xl">Uptime & Reliability</p>
