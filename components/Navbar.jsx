@@ -21,7 +21,7 @@ const Navbar = () => {
       <Link href={WEBSITE_HOME}>
       <div className=' md:px-16 flex items-center'>
         <Image className='w-24 hidden md:block h-auto' src={logoD.src} height={logoD.height} width={logoD.width} alt='logo'/>
-        <Image className='w-24  md:hidden h-auto' src={logoM.src} height={logoM.height} width={logoM.width} alt='logo'/>
+        <Image className='w-20  md:hidden h-auto' src={logoM.src} height={logoM.height} width={logoM.width} alt='logo'/>
       </div>
       </Link>
       <div className='bg-black py-2 hidden font font-medium px-4 border  border-slate-700 rounded-full text-white md:flex items-center gap-5 '>
